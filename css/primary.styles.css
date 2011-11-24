@@ -1,3 +1,8 @@
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+body{
+  background-image:url(../img/Hotsite-home.jpg);
+  background-repeat:no-repeat;
+  background-position:center -33px;
+}
