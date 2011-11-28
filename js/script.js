@@ -2,6 +2,11 @@
 
 */
 
+function SVGLoaded(){
+  $('#arco_acompanha').bind('click', function(event){
+    alert(this.id);
+  })
+}
 function windowHeightUpdated(){
   var ww = window.innerWidth,
       wh = window.innerHeight,
@@ -14,6 +19,6 @@ function windowHeightUpdated(){
 window.addEventListener('load', windowHeightUpdated, true);
 window.addEventListener('resize', windowHeightUpdated, true);
 
-
+window.addEventListener('SVGLoad', SVGLoaded, false);
 
 
