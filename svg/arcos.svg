@@ -57,7 +57,7 @@
        id="bola2"
        style="opacity:0.39655175;fill:#e6e6e6;fill-opacity:1" />
     <path
-       d="M 17.17281,-85.401565 A 90,87 0 0 1 40.859148,77.517566 L 0,0 z"
+       d="M 87,0 A 87,87 0 1 1 85.678275,-15.10739 L 0,0 z"
        id="bola1"
        style="opacity:0.60775865;fill:#ffff00;fill-opacity:1" />
   </g>
