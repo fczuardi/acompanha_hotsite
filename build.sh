@@ -1,3 +1,3 @@
 cd build
-ant basics -Denv=test
+ant build
 cd ..
