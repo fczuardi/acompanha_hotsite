@@ -11,7 +11,7 @@
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/b/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 
   <title></title>
   <meta name="description" content="">
@@ -38,65 +38,130 @@
   </header>
   <div role="main">
     <script type="image/svg+xml">
-      <svg  id="mySVG" 
-            width="1000"
-            height="1000"
-            xmlns:dc="http://purl.org/dc/elements/1.1/">
-       <g id="svg-stage" transform="scale(1,1)">
-       </g>
-       <g
-          id="layer2"
-          transform="translate(483, 346) scale(1.31,1.31)">
-          <g
-             id="trilha_0">
+      <svg
+        id="mySVG"
+        xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <defs>
+          <clipPath id="arcosClip">
             <path
-               d="M 22.71875,-116.8125 16.625,-85.4375 C 56.722232,-77.679333 87,-42.363783 87,0 87,34.903031 66.444956,64.984721 36.78125,78.84375 l 13.5,29 C 84.804775,91.745165 109.54411,60.111379 116.8125,22.71875 129.35283,-41.795639 87.233139,-104.27217 22.71875,-116.8125 z"
-               transform="translate(0,0.00218262)"
-               id="arco_acompanha"
-               style="fill:#d1d2d4;fill-opacity:1" />
+               style="fill:#850000;fill-opacity:1;stroke:none"
+               d="m 0,-300 c -165.68542,0 -300,134.31458 -300,300 0,165.68542 134.31458,300 300,300 C 165.68542,300 300,165.68542 300,0 300,-165.68542 165.68542,-300 0,-300 z m 0,215 c 46.944204,0 85,38.055796 85,85 0,46.944204 -38.055796,85 -85,85 -46.944204,0 -85,-38.055796 -85,-85 0,-46.944204 38.055796,-85 85,-85 z" />
+          </clipPath>
+        </defs>
+        <g
+          clip-path = "url(#arcosClip)"
+          id="svg-stage" 
+          transform="translate(483, 346) scale(1.31,1.31)"
+          >
+          <g
+            id="trilha_3"
+            transform="scale(1)">
+            <g class="item" id="item_aplicativos">
+              <path
+                d="M 4.0015233e-6,-204 A 204,204 0 0 1 106.58971,-173.93859"
+                id="arco_aplicativos"
+                style="fill:none;stroke:#902a8e;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                dy="5.5">
+                <textPath xlink:href = "#arco_aplicativos">
+                  Aplicativos
+                </textPath>
+              </text>
+            </g>
           </g>
           <g
-             id="trilha_1">
-            <path
-               d="m -2.4375,-154.03125 c -60.005886,0.97054 -116.44801,37.19972 -140.34375,96.34375 l 32.4375,13.09375 C -92.694103,-88.212448 -49.946555,-119 0,-119 c 29.868635,0 57.16724,11.01207 78.0625,29.1875 l 22.96875,-26.40625 c -12.876768,-11.1936 -27.524246,-20.17101 -43.34375,-26.5625 -19.714676,-7.96525 -40.123038,-11.57351 -60.125,-11.25 z"
-               transform="translate(0,0.00218262)"
-               id="arco_avaliacao"
-               style="fill:#9ac946;fill-opacity:1" />
-            <path
-               d="M 101.03125,-116.21875 78.0625,-89.8125 C 103.14443,-67.995358 119,-35.85325 119,0 c 0,16.504675 -3.36417,32.211598 -9.4375,46.5 L 141.75,60.15625 c 26.06834,-61.4131767 9.63309,-132.604813 -40.71875,-176.375 z"
-               transform="translate(0,0.00218262)"
-               id="arco_licoes"
-               style="fill:#007882;fill-opacity:1" />
+            id="trilha_2"
+            transform="scale(1)">
+            <g class="item" id="item_saraiva">
+              <path
+                d="M 162.57181,49.703189 A 170,170 0 0 1 82.417642,148.68535"
+                id="arco_saraiva"
+                style="fill:none;stroke:#f2812e;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                 dy="5.5">
+                <textPath xlink:href = "#arco_saraiva">
+                  Saraiva Educa
+                </textPath>
+              </text>
+            </g>
+            <g class="item" id="item_ebooks">
+              <path
+                d="M 97.507992,-139.25585 A 170,170 0 0 1 162.57181,49.703193"
+                id="arco_ebooks"
+                style="fill:none;stroke:#363390;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                 dy="5.5">
+                <textPath xlink:href = "#arco_ebooks">
+                  E-books Literatura Juvenil
+                </textPath>
+              </text>
+            </g>
+            <g class="item" id="item_midiateca">
+              <path
+                d="M 3.3346027e-6,-170 A 170,170 0 0 1 97.507992,-139.25585"
+                id="arco_midiateca"
+                style="fill:none;stroke:#44a1d0;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                 dy="5.5">
+                <textPath xlink:href = "#arco_midiateca">
+                  Midiateca
+                </textPath>
+              </text>
+            </g>
           </g>
           <g
-             id="trilha_2">
-            <path
-               d="m 61.21875,-177.75 -11.0625,32.125 c 32.714329,11.26351 60.44727,33.22217 79,61.71875 l 28.5,-18.5 c -22.84609,-35.1799 -56.77562,-61.68707 -96.4375,-75.34375 z"
-               transform="translate(0,0.00218262)"
-               id="arco_midiateca"
-               style="fill:#44a1d0;fill-opacity:1" />
-            <path
-               d="m 157.65625,-102.40625 -28.5,18.5 C 144.87261,-59.766273 154,-30.952728 154,0 c 0,42.525926 -17.22523,81.037731 -45.09375,108.90625 l 24.03125,24.03125 c 62.76685,-62.766841 73.06402,-160.89855 24.71875,-235.34375 z"
-               transform="translate(0,0.00218262)"
-               id="arco_ebooks"
-               style="fill:#363390;fill-opacity:1" />
-            <path
-               d="M 108.90625,108.90625 C 81.037731,136.77477 42.525926,154 0,154 c -1.7996803,0 -3.5902408,-0.0325 -5.375,-0.0937 l -1.1875,33.9687 c 52.10698,1.81962 102.632343,-18.06984 139.5,-54.9375 l -24.03125,-24.03125 z"
-               transform="translate(0,0.00218262)"
-               id="arco_saraiva"
-               style="fill:#f2812e;fill-opacity:1" />
+            id="trilha_1"
+            transform="scale(1)">
+            <g class="item"  id="item_licoes">
+              <path
+                d="M 133.93385,23.616153 A 136,136 0 0 1 40.89599,129.7055"
+                id="arco_licoes"
+                style="fill:none;stroke:#007882;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                 dy="5.5">
+                <textPath xlink:href = "#arco_licoes">
+                  Lições Multimídia
+                </textPath>
+              </text>
+            </g>
+            <g class="item" id="item_avaliacao">
+              <path
+                d="M 2.6676822e-6,-136 A 136,136 0 0 1 133.93386,23.616148"
+                id="arco_avaliacao"
+                style="fill:none;stroke:#9ac946;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                 dy="5.5">
+                <textPath xlink:href = "#arco_avaliacao">
+                  Avaliação e Banco de Questões
+                </textPath>
+              </text>
+            </g>
           </g>
           <g
-             id="trilha_3"
-             style="fill:#902a8e;fill-opacity:1">
-            <path
-               d="m 163.09375,-152.09375 -25.59375,23.875 c 25.00418,26.80328 42.26794,60.936715 48.21875,98.8125 L 220.25,-34.875 c -6.95144,-43.889678 -26.85045,-84.71976 -57.15625,-117.21875 z"
-               transform="translate(0,0.00218262)"
-               id="arco_aplicativos"
-               style="fill:#902a8e;fill-opacity:1" />
+            id="trilha_0"
+            transform="scale(1)">
+            <g class="item" id="item_acompanha">
+              <path
+                d="M 2.0007616e-6,-102 A 102,102 0 0 1 75.800772,68.251322"
+                id="arco_acompanha"
+                style="fill:none;stroke:#d1d2d4;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+              <text
+                dx="20"
+                 dy="5.5">
+                <textPath xlink:href="#arco_acompanha">
+                  ACOMPANHA APRENDIZAGEM
+                </textPath>
+              </text>
+            </g>
           </g>
-       </g>
-       
+        </g>
+        
       </svg>
     </script>
   </div>

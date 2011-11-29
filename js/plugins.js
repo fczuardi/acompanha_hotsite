@@ -18,3 +18,113 @@ window.log = function(){
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
 
+// Enable animation for the SVG transform attribute
+$.fx.step['svgTransform'] = $.fx.step['svg-transform'] = function(fx) {
+	var attr = fx.elem.attributes.getNamedItem('transform');
+	if (!fx.set) {
+		fx.start = parseTransform(attr ? attr.nodeValue : '');
+		fx.end = parseTransform(fx.end, fx.start);
+		fx.set = true;
+	}
+	var transform = '';
+	for (var i = 0; i < fx.end.order.length; i++) {
+		switch (fx.end.order.charAt(i)) {
+			case 't':
+				transform += ' translate(' +
+					(fx.pos * (fx.end.translateX - fx.start.translateX) + fx.start.translateX) + ',' +
+					(fx.pos * (fx.end.translateY - fx.start.translateY) + fx.start.translateY) + ')';
+				break;
+			case 's':
+				transform += ' scale(' +
+					(fx.pos * (fx.end.scaleX - fx.start.scaleX) + fx.start.scaleX) + ',' +
+					(fx.pos * (fx.end.scaleY - fx.start.scaleY) + fx.start.scaleY) + ')';
+				break;
+			case 'r':
+				transform += ' rotate(' +
+					(fx.pos * (fx.end.rotateA - fx.start.rotateA) + fx.start.rotateA) + ',' +
+					(fx.pos * (fx.end.rotateX - fx.start.rotateX) + fx.start.rotateX) + ',' +
+					(fx.pos * (fx.end.rotateY - fx.start.rotateY) + fx.start.rotateY) + ')';
+				break;
+			case 'x':
+				transform += ' skewX(' +
+					(fx.pos * (fx.end.skewX - fx.start.skewX) + fx.start.skewX) + ')';
+			case 'y':
+				transform += ' skewY(' +
+					(fx.pos * (fx.end.skewY - fx.start.skewY) + fx.start.skewY) + ')';
+				break;
+			case 'm':
+				var matrix = '';
+				for (var j = 0; j < 6; j++) {
+					matrix += ',' + (fx.pos * (fx.end.matrix[j] - fx.start.matrix[j]) + fx.start.matrix[j]);
+				}				
+				transform += ' matrix(' + matrix.substr(1) + ')';
+				break;
+		}
+	}
+	(attr ? attr.nodeValue = transform : fx.elem.setAttribute('transform', transform));
+};
+
+
+/* Decode a transform string and extract component values.
+   @param  value     (string) the transform string to parse
+   @param  original  (object) the settings from the original node
+   @return  (object) the combined transformation attributes */
+function parseTransform(value, original) {
+	value = value || '';
+	if (typeof value == 'object') {
+		value = value.nodeValue;
+	}
+	var transform = $.extend({translateX: 0, translateY: 0, scaleX: 0, scaleY: 0,
+		rotateA: 0, rotateX: 0, rotateY: 0, skewX: 0, skewY: 0,
+		matrix: [0, 0, 0, 0, 0, 0]}, original || {});
+	transform.order = '';
+	var pattern = /([a-zA-Z]+)\(\s*([+-]?[\d\.]+)\s*(?:[\s,]\s*([+-]?[\d\.]+)\s*(?:[\s,]\s*([+-]?[\d\.]+)\s*(?:[\s,]\s*([+-]?[\d\.]+)\s*[\s,]\s*([+-]?[\d\.]+)\s*[\s,]\s*([+-]?[\d\.]+)\s*)?)?)?\)/g;
+	var result = pattern.exec(value);
+	while (result) {
+		switch (result[1]) {
+			case 'translate':
+				transform.order += 't';
+				transform.translateX = parseFloat(result[2]);
+				transform.translateY = (result[3] ? parseFloat(result[3]) : 0);
+				break;
+			case 'scale':
+				transform.order += 's';
+				transform.scaleX = parseFloat(result[2]);
+				transform.scaleY = (result[3] ? parseFloat(result[3]) : transform.scaleX);
+				break;
+			case 'rotate':
+				transform.order += 'r';
+				transform.rotateA = parseFloat(result[2]);
+				transform.rotateX = (result[3] ? parseFloat(result[3]) : 0);
+				transform.rotateY = (result[4] ? parseFloat(result[4]) : 0);
+				break;
+			case 'skewX':
+				transform.order += 'x';
+				transform.skewX = parseFloat(result[2]);
+				break;
+			case 'skewY':
+				transform.order += 'y';
+				transform.skewY = parseFloat(result[2]);
+				break;
+			case 'matrix':
+				transform.order += 'm';
+				transform.matrix = [parseFloat(result[2]), parseFloat(result[3]),
+					parseFloat(result[4]), parseFloat(result[5]),
+					parseFloat(result[6]), parseFloat(result[7])];
+				break;
+		}
+		result = pattern.exec(value);
+	}
+	if (transform.order == 'm' && Math.abs(transform.matrix[0]) == Math.abs(transform.matrix[3]) &&
+			transform.matrix[1] != 0 && Math.abs(transform.matrix[1]) == Math.abs(transform.matrix[2])) {
+		// Simple rotate about origin and translate
+		var angle = Math.acos(transform.matrix[0]) * 180 / Math.PI;
+		angle = (transform.matrix[1] < 0 ? 360 - angle : angle);
+		transform.order = 'rt';
+		transform.rotateA = angle;
+		transform.rotateX = transform.rotateY = 0;
+		transform.translateX = transform.matrix[4];
+		transform.translateY = transform.matrix[5];
+	}
+	return transform;
+}

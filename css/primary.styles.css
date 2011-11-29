@@ -1,15 +1,62 @@
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+@font-face {
+    font-family: 'DINProLight';
+    src: url('../webfontkit/dinpro-light-webfont.eot');
+    src: url('../webfontkit/dinpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfontkit/dinpro-light-webfont.woff') format('woff'),
+         url('../webfontkit/dinpro-light-webfont.ttf') format('truetype'),
+         url('../webfontkit/dinpro-light-webfont.svg#DINProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINProBold';
+    src: url('../webfontkit/dinpro-bold-webfont.eot');
+    src: url('../webfontkit/dinpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfontkit/dinpro-bold-webfont.woff') format('woff'),
+         url('../webfontkit/dinpro-bold-webfont.ttf') format('truetype'),
+         url('../webfontkit/dinpro-bold-webfont.svg#DINProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'DINProMedium';
+    src: url('../webfontkit/dinpro-medium-webfont.eot');
+    src: url('../webfontkit/dinpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfontkit/dinpro-medium-webfont.woff') format('woff'),
+         url('../webfontkit/dinpro-medium-webfont.ttf') format('truetype'),
+         url('../webfontkit/dinpro-medium-webfont.svg#DINProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
   background-image: -moz-radial-gradient(center, circle closest-corner, #f0f3fa, #9cc2e7);
-  width:100%;
-  height:100%;
+  background-image: -webkit-radial-gradient(center, circle closest-corner, #f0f3fa, #9cc2e7);
 }
+
 #mySVG{
-  width:100%;
-  height:100%;
-  background-image:url(../img/Hotsite-home.jpg);
+  width:1000px;
+  height:1000px;
+/*  background-image:url(../img/Hotsite-home.jpg);*/
   background-repeat:no-repeat;
   background-position:0px -33px;
+  font-family: 'DINProMedium';
+  display:block;
+}
+#mySVG text{
+  fill:#fff;
+  font-size:14.5px;
+}
+#mySVG .item{
+  opacity:0;
+}
+#trilha_0 text{
+  fill:#0067b4;
 }

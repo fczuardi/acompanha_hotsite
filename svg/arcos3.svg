@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+  width="1000"
+  height="1000"
+  id="svg3585">
+  <g
+    id="svg-stage" 
+    transform="translate(483, 346) scale(1.31,1.31)">
+    <g
+      id="trilha_0">
+      <path
+        d="M 2.0007616e-6,-102 A 102,102 0 0 1 102,-7.3231778e-7"
+        id="arco_acompanha"
+        style="fill:none;stroke:#d1d2d4;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href="#arco_acompanha">
+          Acompanha Aprendizagem
+        </textPath>
+      </text>
+    </g>
+    <g
+      id="trilha_1">
+      <path
+        d="M 2.6676822e-6,-136 A 136,136 0 0 1 136,-9.764237e-7"
+        id="arco_avaliacao"
+        style="fill:none;stroke:#9ac946;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href = "#arco_avaliacao">
+          Avaliação e Banco de Questões
+        </textPath>
+      </text>
+      <path
+        d="M 136,0 A 136,136 0 0 1 3.6441059e-6,136"
+        id="arco_licoes"
+        style="fill:none;stroke:#007882;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href = "#arco_licoes">
+          Lições Multimídia
+        </textPath>
+      </text>
+    </g>
+    <g
+      id="trilha_2">
+      <path
+        d="M 3.3346027e-6,-170 A 170,170 0 0 1 170,-1.2205296e-6"
+        id="arco_midiateca"
+        style="fill:none;stroke:#44a1d0;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href = "#arco_midiateca">
+          Midiateca
+        </textPath>
+      </text>
+      <path
+        d="M 170,0 A 170,170 0 0 1 4.5551324e-6,170"
+        id="arco_ebooks"
+        style="fill:none;stroke:#363390;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href = "#arco_ebooks">
+          E-books Literatura Juvenil
+        </textPath>
+      </text>
+      <path
+        d="M 4.5551324e-6,170 A 170,170 0 0 1 -170,-7.8897351e-6"
+        id="arco_saraiva"
+        style="fill:none;stroke:#f2812e;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href = "#arco_saraiva">
+          Saraiva Educa
+        </textPath>
+      </text>
+    </g>
+    <g
+      id="trilha_3">
+      <path
+        d="M 4.0015233e-6,-204 A 204,204 0 0 1 204,0"
+        id="arco_aplicativos"
+        style="fill:none;stroke:#902a8e;stroke-width:34;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+        font-size = "20"
+        dx="50"
+        dy="10">
+        <textPath xlink:href = "#arco_aplicativos">
+          Aplicativos
+        </textPath>
+      </text>
+    </g>
+  </g>
+</svg>
