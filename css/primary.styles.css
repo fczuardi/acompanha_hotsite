@@ -216,3 +216,22 @@ body.slug_acompanha #main{
 body.slug_acompanha #content{
   padding-top:73px;
 }
+
+body.slug_aplicativos #content h1{
+  border-color:#902a8e;
+}
+body.slug_midiateca #content  h1{
+  border-color:#44a1d0;
+}
+body.slug_ebooks #content  h1{
+  border-color:#363390;
+}
+body.slug_saraiva #content  h1{
+  border-color:#f2812e;
+}
+body.slug_licoes #content  h1{
+  border-color:#007882;
+}
+body.slug_avaliacao #content  h1{
+  border-color:#9ac946;
+}
