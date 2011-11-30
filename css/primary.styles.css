@@ -37,23 +37,31 @@
 }
 
 body{
-  background-image: -moz-radial-gradient(center, circle closest-corner, #f0f3fa, #9cc2e7);
-  background-image: -webkit-radial-gradient(center, circle closest-corner, #f0f3fa, #9cc2e7);
+  background-image:    -moz-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
+  background-image: -webkit-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
   color:#00156f;
   font-family: "DINProLight";
   font-size: 15px;
 }
 
 #main{
-  width:1024px;
+  width:960px;
   margin:auto;
   position:relative;
+  top:0;
 }
-
+#pre_sidebar{
+  height:1000px;
+  position:absolute;
+  right:50%;
+  width:2000px;
+  margin-right:480px; /* 960/2 */
+/*  background-color:rgba(255,0,0,0.5);*/
+}
 /*SVG da Home*/
 #mySVG{
-  width:1000px;
-  height:1000px;
+  width:960px;
+  height:960px;
 /*  background-image:url(../img/Hotsite-home.jpg);*/
   background-repeat:no-repeat;
   background-position:0px -33px;
@@ -77,6 +85,8 @@ body{
 #linhas_over line{
   opacity:0;
 }
+
+/* Mouse Over */
 .info_box{
   position:absolute;
   background-color:rgba(255,0,0,0.5);
@@ -105,4 +115,104 @@ body{
   bottom:0;
   left:-1px;
   letter-spacing:0.5px;
+}
+
+#main #sidebar{
+  width:377px;
+  height:1000px;
+}
+#sidebar #mySVG{
+  width:377px;
+}
+#main #sidebar #menu{
+  width:100%;
+  height:350px;
+}
+body.interna #assinatura{
+  background-image:url(../img/assinatura_internas.png);
+  position:relative;
+  top:53px;
+  left:102px;
+  height:155px;
+}
+body.interna #assinatura p{
+  font-size:12px;
+}
+#main #sidebar footer{
+  position:relative;
+  top:128px;
+}
+
+#sidebar ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#sidebar footer ul a{
+  text-decoration:none;
+  font-family:'DINProBold';
+  color:#fff;
+  font-size:14px;
+  padding-left:80px;
+  padding-right:14px;
+  line-height:28px;
+  height:28px;
+  display:inline-block;
+}
+#pre_sidebar{
+  padding-top:633px;
+}
+#pre_sidebar div{
+  height:28px;
+}
+#stripe_adquira,
+#sidebar footer ul a.acompanha_link{
+  background-color:#99ca3c;
+}
+#stripe_contato,
+#sidebar footer ul a.fale_conosco_link{
+  background-color:#007883;
+}
+#stripe_saraiva,
+#sidebar footer ul a.saraiva_link{
+  background-color:#39a0d2;
+  padding-left:112px;
+  margin-top:28px;
+}
+
+#content{
+  height:1000px;
+  position:absolute;
+  top:0;
+  left:377px;
+  width:583px;
+  padding-top:43px;
+}
+#content h1,
+#content h2{
+  margin:0;
+  text-transform:uppercase;
+  font-weight:normal;
+}
+#content h2{
+  font-size:29px;
+  line-height:29px;
+  letter-spacing: -1px;
+}
+#content h1{
+  line-height:40px;
+  font-family:"DINProBold";
+  border-bottom:25px solid #00156F;
+  padding-bottom:10px;
+}
+
+/* Acompanha */
+body.slug_acompanha #main{
+/*  background-image:url(../refs/1-avaliacao.jpg);*/
+  background-repeat:no-repeat;
+  height:1000px;
+}
+body.slug_acompanha #content{
+  padding-top:73px;
 }

@@ -3,7 +3,7 @@
 */
 
 function SVGLoaded(){
-  var anim_duration = 1000,
+  var anim_duration = 700,
       anim_easing = 'swing',
       items = $('#mySVG .item').get().reverse(),
       names = ['acompanha', 'avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'],
@@ -42,7 +42,7 @@ function SVGLoaded(){
   // $(items).hover(
   //   function(){ var name = this.id.substr(5); $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);},
   //   function(){ var name = this.id.substr(5); $('#'+name+'_info, #linha_'+name).fadeTo('fast',0)});
-  $(items).click(function(){ var name = this.id.substr(5); window.location.href = './'+name;});
+  $(items).click(function(){ var name = this.id.substr(5); window.location.href = '../'+name;});
 }
 function windowHeightUpdated(){
   var ww = window.innerWidth,
