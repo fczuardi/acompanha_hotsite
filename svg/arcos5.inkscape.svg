@@ -15,7 +15,7 @@
    id="svg3585"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="arcos4.inkscape.svg">
+   sodipodi:docname="arcos5.inkscape.svg">
   <defs
      id="defs3587">
     <pattern
@@ -47,7 +47,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="71.077095"
+     inkscape:cx="-15.351476"
      inkscape:cy="1132.7495"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -67,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,7 +76,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-0.00218262)"
-     style="display:inline">
+     style="display:none">
     <image
        y="-230.7807"
        x="-206.5"

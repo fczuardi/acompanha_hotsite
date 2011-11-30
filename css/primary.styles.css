@@ -37,11 +37,13 @@
 }
 
 body{
+  background-color:#c5daf0;
   background-image:    -moz-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
   background-image: -webkit-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
   color:#00156f;
   font-family: "DINProLight";
   font-size: 15px;
+/*  background-image:url(../refs/nova_home.jpg);*/
 }
 
 #main{
@@ -51,7 +53,6 @@ body{
   top:0;
 }
 #pre_sidebar{
-  height:1000px;
   position:absolute;
   right:50%;
   width:2000px;
@@ -62,21 +63,56 @@ body{
 #mySVG{
   width:960px;
   height:960px;
-/*  background-image:url(../img/Hotsite-home.jpg);*/
+/*  background-image:url(../refs/bgreferencias.png);*/
+  background-position:111px -78px;
+  background-size:760px;
   background-repeat:no-repeat;
-  background-position:0px -33px;
   font-family: 'DINProMedium';
   display:block;
 }
 #mySVG text{
   fill:#fff;
-  font-size:14.5px;
+  font-size:12.5px;
 }
 #mySVG .item:hover{
   cursor:pointer;
 }
 #logo{
   opacity:0;
+}
+#texto_logo{
+  font-family: DINProMedium;
+  font-size: 21px;
+  left: 376px;
+  line-height: 21px;
+  position: absolute;
+  text-align: center;
+  top: 373px;
+  width: 230px;
+}
+#texto_logo a{
+  color:#000;
+  text-decoration:none;
+}
+#chamada{
+  position:absolute;
+  height:28px;
+  background-color:#eee;
+  width:1000px;
+  left:50%;
+  top:538px;
+  margin-left:270px;
+}
+#chamada p{
+  margin:0;
+}
+#chamada p a{
+  color:#0067b4;
+  font-size:14px;
+  font-family:"DINProBold";
+  text-decoration:none;
+  line-height: 28px;
+  margin-left: 11px;
 }
 #trilha_0 text{
   fill:#0067b4;
@@ -102,7 +138,7 @@ body{
 #assinatura{
   position:absolute;
   top:343px;
-  left:130px;
+  left:110px;
   width:278px;
   height:254px;
   background-repeat:no-repeat;
@@ -110,7 +146,7 @@ body{
 }
 #assinatura p{
   font-family: 'DINProBold';
-  font-size:21px;
+  font-size:20px;
   position:absolute;
   bottom:0;
   left:-1px;
@@ -119,7 +155,6 @@ body{
 
 #main #sidebar{
   width:377px;
-  height:1000px;
 }
 #sidebar #mySVG{
   width:377px;
@@ -137,6 +172,13 @@ body.interna #assinatura{
 }
 body.interna #assinatura p{
   font-size:12px;
+}
+body.interna #texto_logo{
+  font-size:15px;
+  line-height:15px;
+  left:74px;
+  top:196px;
+  width:160px;
 }
 #main #sidebar footer{
   position:relative;
@@ -182,7 +224,6 @@ body.interna #assinatura p{
 }
 
 #content{
-  height:1000px;
   position:absolute;
   top:0;
   left:377px;
@@ -211,7 +252,6 @@ body.interna #assinatura p{
 body.slug_acompanha #main{
 /*  background-image:url(../refs/1-avaliacao.jpg);*/
   background-repeat:no-repeat;
-  height:1000px;
 }
 body.slug_acompanha #content{
   padding-top:73px;

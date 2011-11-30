@@ -6,31 +6,31 @@ function SVGLoaded(){
   var anim_duration = 700,
       anim_easing = 'swing',
       items = $('#mySVG .item').get().reverse(),
-      names = ['acompanha', 'avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'],
+      names = ['avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'],
       delayTable = [],
-      initialRotationTable = [ -122,
-                               95, -5,
+      initialRotationTable = [ 
+                               135, 35,
                                -134, -90, -18,
                                79],
-      finalRotationTable = [  10,
-                              -68, -68,
+      finalRotationTable = [  
+                              -28, -28,
                               18, 18, 18,
                               47 ],
       durationTable = [];
   
   delayTable.push(0);
-  for (var i=0;i<=5;i++){
+  for (var i=0;i<=4;i++){
     delayTable.push(delayTable[i]+anim_duration/2);
   }
-  delayTable[4] -= anim_duration * 0.25;
-  delayTable[5] -= anim_duration * 0.10;
-  delayTable[6] -= anim_duration * 0.40;
+  delayTable[3] -= anim_duration * 0.25;
+  delayTable[4] -= anim_duration * 0.10;
+  delayTable[5] -= anim_duration * 0.40;
   for (var i=0;i<items.length;i++){
     durationTable.push(anim_duration);
   }
-  durationTable[2] = anim_duration * 0.70;
+  durationTable[1] = anim_duration * 0.70;
+  durationTable[4] = anim_duration * 0.50;
   durationTable[5] = anim_duration * 0.50;
-  durationTable[6] = anim_duration * 0.50;
   
   $(items).each(function(index, element){
     $(element).attr('transform','scale(1) rotate('+(initialRotationTable[index])+')');
