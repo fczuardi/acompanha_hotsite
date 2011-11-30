@@ -18,6 +18,37 @@ window.log = function(){
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
 
+// Enable animation for all of these SVG numeric attributes -
+// named as svg-* or svg* (with first character upper case)
+$.each(['x', 'y', 'width', 'height', 'rx', 'ry', 'cx', 'cy', 'r', 'x1', 'y1', 'x2', 'y2',
+		'stroke-width', 'strokeWidth', 'opacity', 'fill-opacity', 'fillOpacity',
+		'stroke-opacity', 'strokeOpacity', 'stroke-dashoffset', 'strokeDashOffset',
+		'font-size', 'fontSize', 'font-weight', 'fontWeight',
+		'letter-spacing', 'letterSpacing', 'word-spacing', 'wordSpacing'],
+	function(i, attrName) {
+		var ccName = attrName.charAt(0).toUpperCase() + attrName.substr(1);
+		if ($.cssProps) {
+			$.cssProps['svg' + ccName] = $.cssProps['svg-' + attrName] = attrName;
+		}
+		$.fx.step['svg' + ccName] = $.fx.step['svg-' + attrName] = function(fx) {
+			var realAttrName = $.svg._attrNames[attrName] || attrName;
+			var attr = fx.elem.attributes.getNamedItem(realAttrName);
+			if (!fx.set) {
+				fx.start = (attr ? parseFloat(attr.nodeValue) : 0);
+				var offset = ($.fn.jquery >= '1.6' ? '' :
+					fx.options.curAnim['svg' + ccName] || fx.options.curAnim['svg-' + attrName]);
+				if (/^[+-]=/.exec(offset)) {
+					fx.end = fx.start + parseFloat(offset.replace(/=/, ''));
+				}
+				$(fx.elem).css(realAttrName, '');
+				fx.set = true;
+			}
+			var value = (fx.pos * (fx.end - fx.start) + fx.start) + (fx.unit == '%' ? '%' : '');
+			(attr ? attr.nodeValue = value : fx.elem.setAttribute(realAttrName, value));
+		};
+	}
+);
+
 // Enable animation for the SVG transform attribute
 $.fx.step['svgTransform'] = $.fx.step['svg-transform'] = function(fx) {
 	var attr = fx.elem.attributes.getNamedItem('transform');

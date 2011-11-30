@@ -39,8 +39,18 @@
 body{
   background-image: -moz-radial-gradient(center, circle closest-corner, #f0f3fa, #9cc2e7);
   background-image: -webkit-radial-gradient(center, circle closest-corner, #f0f3fa, #9cc2e7);
+  color:#00156f;
+  font-family: "DINProLight";
+  font-size: 15px;
 }
 
+#main{
+  width:1024px;
+  margin:auto;
+  position:relative;
+}
+
+/*SVG da Home*/
 #mySVG{
   width:1000px;
   height:1000px;
@@ -54,9 +64,45 @@ body{
   fill:#fff;
   font-size:14.5px;
 }
-#mySVG .item{
+#mySVG .item:hover{
+  cursor:pointer;
+}
+#logo{
   opacity:0;
 }
 #trilha_0 text{
   fill:#0067b4;
+}
+#linhas_over polyline,
+#linhas_over line{
+  opacity:0;
+}
+.info_box{
+  position:absolute;
+  background-color:rgba(255,0,0,0.5);
+  line-height: 1.4em;
+  display:none;
+}
+#saraiva_info{
+  top:30px;
+  left:30px;
+  width:200px;
+}
+
+#assinatura{
+  position:absolute;
+  top:343px;
+  left:130px;
+  width:278px;
+  height:254px;
+  background-repeat:no-repeat;
+  background-image:url(../img/assinatura_home.png);
+}
+#assinatura p{
+  font-family: 'DINProBold';
+  font-size:21px;
+  position:absolute;
+  bottom:0;
+  left:-1px;
+  letter-spacing:0.5px;
 }

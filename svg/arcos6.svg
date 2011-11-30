@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="744.09003"
+   height="1052.36"
+   id="svg3585">
+  <defs
+     id="defs3587" />
+  <metadata
+     id="metadata3590">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-0.00218262)"
+     id="layer1"
+     style="display:none">
+    <image
+       xlink:href="file:///Users/fabricio/trampos/projeto-saraiva/infografico.png"
+       x="-200.20123"
+       y="-235.01582"
+       width="463"
+       height="472"
+       transform="matrix(0.94012085,-0.3408413,0.3408413,0.94012085,0,0)"
+       id="image3679" />
+  </g>
+  <g
+     transform="translate(0,-0.00218262)"
+     id="layer2"
+     style="opacity:0.55603452;display:inline">
+<path
+  d="m 0,-221 0,34 c 34.488083,0 68.312826,9.54253 97.71875,27.5625 l 17.75,-29 C 80.718349,-209.73257 40.756233,-221 0,-221 z"
+  id="shape_aplicativos"
+  style="fill:#902a8e;fill-opacity:1;stroke:none;" />
+<path
+  d="m 0,-187 0,34 c 31.400469,0 62.028241,9.64568 87.75,27.65625 l 19.5,-27.84375 C 75.815695,-175.19804 38.3742,-187 0,-187 z"
+  id="shape_midiateca"
+  style="fill:#44a1d0;stroke:none;" />
+<path
+  d="m 146.3125,44.71875 c -11.59529,37.926493 -37.43809,69.86648 -72.125,89.09375 l 16.46875,29.75 c 42.38376,-23.49371 74.01927,-62.53281 88.1875,-108.875 L 146.3125,44.71875 z"
+  id="shape_saraiva"
+  style="fill:#f2812e;stroke:none;" />
+<path
+  d="m 107.25,-153.1875 -19.5,27.84375 c 54.35138,38.057242 77.96159,106.610936 58.5625,170.0625 l 32.53125,9.96875 c 23.66637,-77.409194 -5.28654,-161.44619 -71.59375,-207.875 z"
+  id="shape_ebooks"
+  style="fill:#363390;stroke:none;" />
+<path
+  d="m 0,-153 0,34 c 65.923244,0 119,53.076756 119,119 0,6.9275378 -0.60955,13.833957 -1.8125,20.65625 l 33.5,5.90625 C 152.23415,17.790989 153,8.9068261 153,0 153,-84.298208 84.298208,-153 0,-153 z"
+  id="shape_avaliacao"
+  style="fill:#9ac946;stroke:none;" />
+<path
+  d="M 117.1875,20.65625 C 109.47604,64.390112 78.134416,100.1461 35.78125,113.5 L 46,145.90625 C 100.38134,128.75988 140.78601,82.716655 150.6875,26.5625 l -33.5,-5.90625 z"
+  id="shape_licoes"
+  style="fill:#007882;stroke:none;" />
+<path
+  d="m 0,-119 0,34 c 47.145563,10e-7 85.000001,37.854437 85,85 0,21.009725 -7.7855,41.261732 -21.84375,56.875 L 88.4375,79.625 C 108.11161,57.774688 119,29.402495 119,0 119,-65.520526 65.520526,-119 0,-119 z"
+  id="shape_acompanha"
+  style="fill:#d1d2d4;stroke:none;" />
+  </g>
+  <g
+     id="layer3"
+     style="opacity:0.53448277;display:none">
+    <path
+       d="m 0,-300 c -165.68542,0 -300,134.31458 -300,300 0,165.68542 134.31458,300 300,300 C 165.68542,300 300,165.68542 300,0 300,-165.68542 165.68542,-300 0,-300 z m 0,215 c 46.944204,0 85,38.055796 85,85 0,46.944204 -38.055796,85 -85,85 -46.944204,0 -85,-38.055796 -85,-85 0,-46.944204 38.055796,-85 85,-85 z"
+       id="path4629"
+       style="fill:#850000;fill-opacity:1;stroke:none" />
+  </g>
+</svg>
