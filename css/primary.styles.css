@@ -2,18 +2,6 @@
    Author:
    ========================================================================== */
 @font-face {
-    font-family: 'DINProLight';
-    src: url('../webfontkit/dinpro-light-webfont.eot');
-    src: url('../webfontkit/dinpro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../webfontkit/dinpro-light-webfont.woff') format('woff'),
-         url('../webfontkit/dinpro-light-webfont.ttf') format('truetype'),
-         url('../webfontkit/dinpro-light-webfont.svg#DINProLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'DINProBold';
     src: url('../webfontkit/dinpro-bold-webfont.eot');
     src: url('../webfontkit/dinpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -22,7 +10,6 @@
          url('../webfontkit/dinpro-bold-webfont.svg#DINProBold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'DINProMedium';
@@ -33,20 +20,57 @@
          url('../webfontkit/dinpro-medium-webfont.svg#DINProMedium') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('../webfontkit/dinpro-regular-webfont.eot');
+    src: url('../webfontkit/dinpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfontkit/dinpro-regular-webfont.woff') format('woff'),
+         url('../webfontkit/dinpro-regular-webfont.ttf') format('truetype'),
+         url('../webfontkit/dinpro-regular-webfont.svg#DINProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
-
+@font-face {
+    font-family: 'DINProLight';
+    src: url('../webfontkit/dinpro-light-webfont.eot');
+    src: url('../webfontkit/dinpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfontkit/dinpro-light-webfont.woff') format('woff'),
+         url('../webfontkit/dinpro-light-webfont.ttf') format('truetype'),
+         url('../webfontkit/dinpro-light-webfont.svg#DINProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
   background-color:#c5daf0;
   background-image:    -moz-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
   background-image: -webkit-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
   color:#00156f;
-  font-family: "DINProLight";
+  font-family: "DINProRegular";
   font-size: 15px;
 /*  background-image:url(../refs/nova_home.jpg);*/
 }
+p a{
+	font-family: 'DINProBold';
+	text-decoration:none;
+	color:#00156f;
+}
+p a:hover{
+	color:#00156f;
+	text-decoration:underline;
+}
+p a:visited{
+	color:#00156f;
+}
 body.home{
   overflow:hidden;
+}
+h3{
+	font-family: "DINProBold";
+  font-size: 21px;
+	line-height: 26px;
+	font-weight:normal;
 }
 #main{
   width:960px;
@@ -64,7 +88,7 @@ body.home{
 /*SVG da Home*/
 #mySVG{
   width:960px;
-  height:960px;
+/*  height:960px;*/
 /*  background-image:url(../refs/bgreferencias.png);*/
   background-position:111px -78px;
   background-size:760px;
@@ -249,31 +273,93 @@ body.interna #texto_logo{
   border-bottom:25px solid #00156F;
   padding-bottom:10px;
 }
-
-/* Acompanha */
+#content h3{
+  position:absolute;
+}
+#content img{
+  position:absolute;
+}
 body.slug_acompanha #main{
-/*  background-image:url(../refs/1-avaliacao.jpg);*/
   background-repeat:no-repeat;
 }
+
 body.slug_acompanha #content{
   padding-top:73px;
+}
+body.slug_acompanha #content h3{
+	top:500px;
+}
+body.slug_acompanha #content img{
+	left: 160px;
+	top: 360px;
 }
 
 body.slug_aplicativos #content h1{
   border-color:#902a8e;
 }
+body.slug_aplicativos #content h3{
+	top:445px;
+}
+body.slug_aplicativos #content img{
+	left: 110px;
+	top: 330px;
+}
+
 body.slug_midiateca #content  h1{
   border-color:#44a1d0;
 }
+body.slug_midiateca #content h3{
+	top: 403px;
+	left: 230px;
+}
+body.slug_midiateca #content img{
+	left: -80px;
+	top: 285px;
+}
+
 body.slug_ebooks #content  h1{
   border-color:#363390;
 }
+body.slug_ebooks #content h3{
+	top: 432px;
+	left: 320px;
+}
+body.slug_ebooks #content img{
+	left: -90px;
+	top: 306px;
+}
+
 body.slug_saraiva #content  h1{
   border-color:#f2812e;
 }
+body.slug_saraiva #content h3{
+	top: 340px;
+	left: 348px;
+}
+body.slug_saraiva #content img{
+	left: -100px;
+	top: 266px;
+}
+
 body.slug_licoes #content  h1{
   border-color:#007882;
 }
+body.slug_licoes #content h3{
+	top: 527px;
+}
+body.slug_licoes #content img{
+	left: 28px;
+	top: 470px;
+}
+
 body.slug_avaliacao #content  h1{
   border-color:#9ac946;
+}
+body.slug_avaliacao #content h3{
+	top: 435px;
+	left: 250px;
+}
+body.slug_avaliacao #content img{
+	left: -67px;
+	top: 360px;
 }
