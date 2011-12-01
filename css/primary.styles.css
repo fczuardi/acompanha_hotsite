@@ -45,7 +45,9 @@ body{
   font-size: 15px;
 /*  background-image:url(../refs/nova_home.jpg);*/
 }
-
+body.home{
+  overflow:hidden;
+}
 #main{
   width:960px;
   margin:auto;
