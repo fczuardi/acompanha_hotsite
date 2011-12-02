@@ -134,23 +134,13 @@ h3{
   margin:0;
 }
 #chamada p a{
+  color:#0067b4;
   font-size:14px;
   font-family:"DINProBold";
   text-decoration:none;
   line-height: 28px;
   margin-left: 11px;
 }
-#chamada,
-#stripe_tutorial,
-#sidebar footer ul a.tutorial_link{
-  background-color:#eee;  
-}
-
-#chamada p a,
-#sidebar footer ul a.tutorial_link{
-  color:#0067b4;
-}
-
 #trilha_0 text{
   fill:#0067b4;
 }
@@ -313,7 +303,7 @@ body.slug_aplicativos #content h3{
 }
 body.slug_aplicativos #content img{
 	left: 110px;
-	top: 330px;
+	top: 335px;
 }
 
 body.slug_midiateca #content  h1{
@@ -349,7 +339,7 @@ body.slug_saraiva #content h3{
 }
 body.slug_saraiva #content img{
 	left: -100px;
-	top: 266px;
+	top: 276px;
 }
 
 body.slug_licoes #content  h1{
