@@ -107,7 +107,7 @@ h3{
   opacity:0;
 }
 #texto_logo{
-  font-family: DINProMedium;
+  font-family: DINProBold;
   font-size: 21px;
   left: 376px;
   line-height: 21px;
@@ -117,8 +117,9 @@ h3{
   width: 230px;
 }
 #texto_logo a{
-  color:#000;
+  color:#00156F;
   text-decoration:none;
+  font-weight:normal;
 }
 #chamada{
   position:absolute;
