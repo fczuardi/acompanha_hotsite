@@ -134,13 +134,23 @@ h3{
   margin:0;
 }
 #chamada p a{
-  color:#0067b4;
   font-size:14px;
   font-family:"DINProBold";
   text-decoration:none;
   line-height: 28px;
   margin-left: 11px;
 }
+#chamada,
+#stripe_tutorial,
+#sidebar footer ul a.tutorial_link{
+  background-color:#eee;  
+}
+
+#chamada p a,
+#sidebar footer ul a.tutorial_link{
+  color:#0067b4;
+}
+
 #trilha_0 text{
   fill:#0067b4;
 }
