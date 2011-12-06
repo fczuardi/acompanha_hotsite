@@ -176,7 +176,8 @@ h3{
   font-size:20px;
   position:absolute;
   bottom:0;
-  left:-1px;
+  left:-32px;
+  top:110px;
   letter-spacing:0.5px;
 }
 
@@ -198,7 +199,7 @@ body.interna #assinatura{
   height:155px;
 }
 body.interna #assinatura p{
-  font-size:12px;
+  font-size:16px;
 }
 body.interna #texto_logo{
   font-size:15px;
