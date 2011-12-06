@@ -241,13 +241,19 @@ body.interna #texto_logo{
 }
 #stripe_contato,
 #sidebar footer ul a.fale_conosco_link{
-  background-color:#007883;
+  background-color:#39a0d2;
 }
 #stripe_saraiva,
 #sidebar footer ul a.saraiva_link{
-  background-color:#39a0d2;
+  background-color:#eee;
   padding-left:112px;
   margin-top:28px;
+  color:#0067b4;
+}
+
+#stripe_tutorial,
+#sidebar footer ul a.tutorial_link{
+  background-color:#007883;
 }
 
 #content{
