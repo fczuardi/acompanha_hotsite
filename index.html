@@ -60,8 +60,8 @@
               r="3.938"
               style="fill:#ec1e24" />
           </marker>
-          <marker id="ponta_linha" viewBox = "-4 -4 8 8" refX = "0" refY = "0">
-            <circle cx="0" cy="0" r="2" style="fill:#000000" />
+          <marker id="ponta_linha" markerUnits="userSpaceOnUse" refX = "5" refY = "5" markerWidth="10" markerHeight="10">
+            <circle cx="5" cy="5" r="1.25" style="fill:#000000" />
           </marker>
           <clipPath id="clip_trilha_1">
             <path d="m -71.858492,-135.08148 15.962033,30.02021 c 58.2067692,-30.94908 129.988792,-9.00312 160.937879,49.203652 3.25229,6.116652 5.95645,12.500828 8.09718,19.089305 16.19011,49.828046 -1.99161,104.217659 -44.908873,134.268659 L 87.744141,125.34858 C 142.78889,86.805845 166.25524,16.627658 145.49016,-47.280703 142.7378,-55.751592 139.24314,-63.955387 135.06164,-71.81965 95.486025,-146.25055 2.5724145,-174.65709 -71.858492,-135.08148 z" />
@@ -195,14 +195,39 @@
               </text>
             </g>
           </g>
-          <g id="linhas_over" transform="scale(1.01)"  fill="none" stroke="#000000">
-            <polyline id="linha_acompanha"    points="259.878,-93.97 232.428,-93.97 105.336,-42.587 "/>
-            <polyline id="linha_avaliacao"    points="-39.294,-141.546 -49.797,-179.506 -113.455,-179.506 "/>
-            <polyline id="linha_licoes"       points="133.555,-64.069 226.186,-108.507 259.878,-108.507 "/>
-            <polyline id="linha_saraiva"      points="103.458,147.075 126.651,180.045 185.546,180.045 "/>
-            <line     id="linha_ebooks"       x1="181.044" y1="-10.428" x2="259.878" y2="-10.428"/>
-            <polyline id="linha_midiateca"    points="105.491,-147.038 128,-178.412 221.545,-178.412 "/>
-            <polyline id="linha_aplicativos"  points="190.482,-97.692 226.254,-116.039 259.878,-116.039 "/>
+          <g id="linhas_over" transform="scale(1.01) translate(0)"  fill="none" stroke="#000000" stroke-width="0.5">
+            <polyline style="marker-start:url(#ponta_linha);marker-end:url(#ponta_linha);" id="linha_avaliacao"    points="64.605,-133.291 96.89,-199.9 221.545,-199.9 "/>
+            <polyline style="marker-start:url(#ponta_linha);marker-end:url(#ponta_linha);" id="linha_licoes"       points="143.026,38.251 213.616,57.129 259.878,57.129 "/>
+            <polyline style="marker-start:url(#ponta_linha);marker-end:url(#ponta_linha);" id="linha_saraiva"      points="103.458,147.075 126.651,180.0 185.546,180.0 "/>
+            <line     style="marker-start:url(#ponta_linha);marker-end:url(#ponta_linha);" id="linha_ebooks"       x1="178.872" y1="-10.0" x2="259.878" y2="-10.0"/>
+            <polyline style="marker-start:url(#ponta_linha);marker-end:url(#ponta_linha);" id="linha_midiateca"    points="105.491,-147.038 128,-178.0 221.545,-178.0 "/>
+            <polyline style="marker-start:url(#ponta_linha);marker-end:url(#ponta_linha);" id="linha_aplicativos"  points="189.061,-96.963 226.254,-116.039 259.878,-116.039 "/>
+          </g>
+          <g id="mouse_overs" style="opacity:0;">
+            <path
+              d="m 0,-221 0,34 c 34.488083,0 68.312826,9.54253 97.71875,27.5625 l 17.75,-29 C 80.718349,-209.73257 40.756233,-221 0,-221 z"
+              id="hover_aplicativos"
+              style="fill:#902a8e;fill-opacity:1;stroke:none;" />
+            <path
+              d="m 0,-187 0,34 c 31.400469,0 62.028241,9.64568 87.75,27.65625 l 19.5,-27.84375 C 75.815695,-175.19804 38.3742,-187 0,-187 z"
+              id="hover_midiateca"
+              style="fill:#44a1d0;stroke:none;" />
+            <path
+              d="m 107.25,-153.1875 -19.5,27.84375 c 54.35138,38.057242 77.96159,106.610936 58.5625,170.0625 l 32.53125,9.96875 c 23.66637,-77.409194 -5.28654,-161.44619 -71.59375,-207.875 z"
+              id="hover_ebooks"
+              style="fill:#363390;stroke:none;" />
+            <path
+              d="m 146.3125,44.71875 c -11.59529,37.926493 -37.43809,69.86648 -72.125,89.09375 l 16.46875,29.75 c 42.38376,-23.49371 74.01927,-62.53281 88.1875,-108.875 L 146.3125,44.71875 z"
+              id="hover_saraiva"
+              style="fill:#f2812e;stroke:none;" />
+            <path
+              d="M 117.1875,20.65625 C 108.08967,72.252602 66.501785,111.73998 14.5,118.125 l 4.15625,33.75 C 85.352596,143.68572 139.01882,92.738847 150.6875,26.5625 l -33.5,-5.90625 z"
+              id="hover_licoes"
+              style="fill:#007882;stroke:none;" />
+            <path
+              d="m 0,-153 0,34 c 65.923244,0 119,53.076756 119,119 0,6.9275378 -0.60955,13.833957 -1.8125,20.65625 l 33.5,5.90625 C 152.23415,17.790989 153,8.9068261 153,0 153,-84.298208 84.298208,-153 0,-153 z"
+              id="hover_avaliacao"
+              style="fill:#9ac946;stroke:none;" />
           </g>
           <g
            id="logo" transform="scale(1.4) translate(2,-17)">
@@ -228,7 +253,32 @@
     </div>
     <div id="saraiva_info" class="info_box">
       <p>
-        Plataforma digital de avaliação, gerenciamento e desenvolvimento do aprendizado que pode ser adquirida integralmente ou em módulos. Saiba Mais.
+        Possui apresentações, sugestões de avaliação, textos extras, artigos, imagens, animações e simulações dos materiais encontrados. Saiba mais.
+      </p>
+    </div>
+    <div id="avaliacao_info" class="info_box">
+      <p>
+        Diagnostica e avalia a aprendizagem. Possui milhares de questões de vestibulares, assim como das habilidades avaliadas no ENEM. Saiba mais.
+      </p>
+    </div>
+    <div id="licoes_info" class="info_box">
+      <p>
+        Possui atividades distribuídas pelas quatro áreas do conhecimento. Todas podem ser editadas pelo professor. Saiba mais.
+      </p>
+    </div>
+    <div id="midiateca_info" class="info_box">
+      <p>
+        Catálogo de links com textos, planos de aula, simulações e animações disponíveis na internet. Saiba mais.
+      </p>
+    </div>
+    <div id="ebooks_info" class="info_box">
+      <p>
+        Biblioteca com versões digitais dos livros de Literatura juvenil da Editora Saraiva. Saiba mais.
+      </p>
+    </div>
+    <div id="aplicativos_info" class="info_box">
+      <p>
+        Biblioteca com aplicativos desenvolvidos com vários recursos audiovisuais e muita interação. Saiba mais.
       </p>
     </div>
   </div>

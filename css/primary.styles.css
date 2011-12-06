@@ -123,7 +123,8 @@ h3{
   fill:#fff;
   font-size:12.5px;
 }
-#mySVG .item:hover{
+#mySVG .item,
+#mySVG #mouse_overs path:hover{
   cursor:pointer;
 }
 #logo{
@@ -164,22 +165,42 @@ h3{
 #trilha_0 text{
   fill:#0067b4;
 }
-#linhas_over polyline,
-#linhas_over line{
+polyline,
+line{
   opacity:0;
 }
 
 /* Mouse Over */
 .info_box{
   position:absolute;
-  background-color:rgba(255,0,0,0.5);
+/*  background-color:rgba(255,0,0,0.5);*/
   line-height: 1.4em;
   display:none;
+  width:200px;
 }
 #saraiva_info{
-  top:30px;
-  left:30px;
-  width:200px;
+  top: 558px;
+  left: 746px;
+}
+#avaliacao_info{
+  top: 56px;
+  left: 794px;
+}
+#licoes_info{
+  top: 396px;
+  left: 846px;
+}
+#midiateca_info{
+  top: 84px;
+  left: 795px;
+}
+#ebooks_info{
+  top: 306px;
+  left: 847px;
+}
+#aplicativos_info{
+  top: 167px;
+  left: 846px;
 }
 
 #assinatura{
@@ -310,6 +331,7 @@ body.interna #texto_logo{
 }
 #content img{
   position:absolute;
+  z-index:-1;
 }
 body.slug_contato #content h3{
   position:relative;
