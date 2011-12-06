@@ -1,0 +1,7 @@
+ToDo
+
+- Mouse-overs da home
+- Ajustar comportamento nos iPads/iPhones (zoom inicial?)
+- Backwards compatibility (IE)
+- Colar imagens de Acompanha, Midiateca e Aplicativos no fim da janela (qdo a janela for grande)
+- Bug(?) de posicionamento impreciso do texto nas curvas (Safari 5.0.5)
