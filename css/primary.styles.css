@@ -286,6 +286,9 @@ body.interna #texto_logo{
 #content img{
   position:absolute;
 }
+body.slug_contato #content h3{
+  position:relative;
+} 
 body.slug_acompanha #main{
   background-repeat:no-repeat;
 }
