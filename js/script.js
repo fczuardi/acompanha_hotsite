@@ -51,10 +51,12 @@ function windowHeightUpdated(){
       scaleH = wh/100,
       svg_stage = document.getElementById('svg-stage');
 
-  svg_stage.setAttribute('transform', 'scale('+scaleW+', '+scaleH+')');
+  // svg_stage.setAttribute('transform', 'scale('+scaleW+', '+scaleH+')');
+  
+  $('body').height(wh);
 }
-// window.addEventListener('load', windowHeightUpdated, true);
-// window.addEventListener('resize', windowHeightUpdated, true);
+window.addEventListener('load', windowHeightUpdated, true);
+window.addEventListener('resize', windowHeightUpdated, true);
 
 window.addEventListener('SVGLoad', SVGLoaded, false);
 

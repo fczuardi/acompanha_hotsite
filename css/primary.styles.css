@@ -43,25 +43,45 @@
     font-style: normal;
 }
 body{
-  background-color:#c5daf0;
-  background-image:    -moz-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
-  background-image: -webkit-radial-gradient(center, circle farthest-corner, #f0f3fa, #9cc2e7);
-  color:#00156f;
+  background-color:#9cc2e7;
+  color:#242967;
   font-family: "DINProRegular";
   font-size: 15px;
+  overflow:hidden;
+  height:1000px;
 /*  background-image:url(../refs/nova_home.jpg);*/
+}
+#bg_gradiente{
+  width:770px;
+  height:770px;
+  top:-30px;
+  left:95px;
+  background-image:    -moz-radial-gradient(center, circle contain, #f0f3fa, #9cc2e7);
+  background-image: -webkit-radial-gradient(center, circle contain, #f0f3fa, #9cc2e7);
+  background-repeat:no-repeat;
+  position:absolute;
+}
+#bg_container{
+  height:98%;
+  border:1px solid black;
+}
+.interna #bg_gradiente{
+  top:-470px;
+  left:-585px;
+  width:1440px;
+  height:1440px;
 }
 p a{
 	font-family: 'DINProBold';
 	text-decoration:none;
-	color:#00156f;
+	color:#242967;
 }
 p a:hover{
-	color:#00156f;
+	color:#242967;
 	text-decoration:underline;
 }
 p a:visited{
-	color:#00156f;
+	color:#242967;
 }
 body.home{
   overflow:hidden;
@@ -80,6 +100,7 @@ h3{
 }
 #pre_sidebar{
   position:absolute;
+  z-index:2;
   right:50%;
   width:2000px;
   margin-right:480px; /* 960/2 */
@@ -87,6 +108,7 @@ h3{
 }
 /*SVG da Home*/
 #mySVG{
+  position:absolute;
   width:960px;
   height:600px;
 /*  background-image:url(../refs/bgreferencias.png);*/
@@ -117,24 +139,21 @@ h3{
   width: 230px;
 }
 #texto_logo a{
-  color:#00156F;
+  color:#242967;
   text-decoration:none;
   font-weight:normal;
 }
 #chamada{
   position:absolute;
-  height:28px;
-  background-color:#eee;
-  width:1000px;
-  left:50%;
-  top:538px;
-  margin-left:270px;
+  top:630px;
+  background-color:#007883;
+  margin-left:-3;
 }
 #chamada p{
   margin:0;
 }
 #chamada p a{
-  color:#0067b4;
+  color:#fff;
   font-size:14px;
   font-family:"DINProBold";
   text-decoration:none;
@@ -166,19 +185,22 @@ h3{
   position:absolute;
   top:343px;
   left:110px;
-  width:278px;
+  width:311px;
   height:254px;
   background-repeat:no-repeat;
   background-image:url(../img/assinatura_home.png);
 }
 #assinatura p{
   font-family: 'DINProBold';
-  font-size:20px;
+  font-size:25px;
   position:absolute;
   bottom:0;
-  left:-32px;
-  top:110px;
-  letter-spacing:0.5px;
+  left:-33px;
+  top:188px;
+  letter-spacing:0;
+}
+.interna #assinatura p{
+  top:115px;
 }
 
 #main #sidebar{
@@ -219,6 +241,7 @@ body.interna #texto_logo{
   padding:0;
 }
 
+#chamada,
 #sidebar footer ul a{
   text-decoration:none;
   font-family:'DINProBold';
@@ -278,7 +301,7 @@ body.interna #texto_logo{
 #content h1{
   line-height:40px;
   font-family:"DINProBold";
-  border-bottom:25px solid #00156F;
+  border-bottom:25px solid #242967;
   padding-bottom:10px;
 }
 #content h3{
