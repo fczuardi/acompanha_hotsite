@@ -43,11 +43,11 @@
     font-style: normal;
 }
 body{
-  background-color:#9cc2e7;
+  background-color:#d5e2f3;
   color:#242967;
   font-family: "DINProRegular";
   font-size: 15px;
-  overflow:hidden;
+/*  overflow:hidden;*/
   height:1000px;
 /*  background-image:url(../refs/nova_home.jpg);*/
 }
@@ -56,8 +56,8 @@ body{
   height:770px;
   top:-30px;
   left:95px;
-  background-image:    -moz-radial-gradient(center, circle contain, #f0f3fa, #9cc2e7);
-  background-image: -webkit-radial-gradient(center, circle contain, #f0f3fa, #9cc2e7);
+  background-image:    -moz-radial-gradient(center, circle contain, #f0f3fa, #d5e2f3);
+  background-image: -webkit-radial-gradient(center, circle contain, #f0f3fa, #d5e2f3);
   background-repeat:no-repeat;
   position:absolute;
 }
@@ -70,6 +70,7 @@ body{
   left:-585px;
   width:1440px;
   height:1440px;
+  background-image: none;
 }
 p a{
 	font-family: 'DINProBold';
