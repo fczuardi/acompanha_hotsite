@@ -44,21 +44,23 @@
 }
 body{
   visibility:hidden;
-  background-color:#d5e2f3;
+  background-color:#D5E2F3;
   color:#242967;
   font-family: "DINProRegular";
   font-size: 15px;
-/*  overflow:hidden;*/
   height:1000px;
-/*  background-image:url(../refs/nova_home.jpg);*/
 }
 #bg_gradiente{
   width:770px;
   height:770px;
   top:-30px;
   left:95px;
-  background-image:    -moz-radial-gradient(center, circle contain, #f0f3fa, #d5e2f3);
-  background-image: -webkit-radial-gradient(center, circle contain, #f0f3fa, #d5e2f3);
+  background-image:      -ms-radial-gradient(center, circle contain, #F0F3FA 0%, #D5E2F3 100%);
+  background-image:     -moz-radial-gradient(center, circle contain, #F0F3FA 0%, #D5E2F3 100%);
+  background-image:       -o-radial-gradient(center, circle contain, #F0F3FA 0%, #D5E2F3 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 479, color-stop(0, #F0F3FA), color-stop(1, #D5E2F3));
+  background-image:  -webkit-radial-gradient(center, circle contain, #F0F3FA 0%, #D5E2F3 100%);
+  background-image:          radial-gradient(center, circle contain, #F0F3FA 0%, #D5E2F3 100%);
   background-repeat:no-repeat;
   position:absolute;
 }

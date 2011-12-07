@@ -6,7 +6,6 @@ var is_iPhone = (navigator.userAgent.match(/iPhone/i) !== null),
     is_iPad = (navigator.userAgent.match(/iPad/i) !== null);
 
 function SVGLoaded(){
-  console.log('SVGLOADED');
   var anim_duration = 700,
       anim_easing = 'swing',
       items = $('#mySVG .item').get().reverse(),
@@ -48,21 +47,21 @@ function SVGLoaded(){
     //event listenersvhover
     $('#hover_'+names.join(", #hover_")).each(function(index){
       $(this).attr('transform','rotate('+finalRotationTable[names.length-1-index]+')')
-      $(this).hover(
-        function(){ 
-          var name = this.id.substr(6); 
-          $('#'+name+'_info, #linha_'+name).stop();
-          $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);
-        },
-        function(){ 
-          var name = this.id.substr(6);
-          $('#'+name+'_info, #linha_'+name).stop();
-          $('#'+name+'_info, #linha_'+name).css('opacity',0);
-        });
-        //event listeners click
-        $(this).click(function(){ 
-          var name = this.id.substr(6); 
-          window.location.href = '../'+name;});
+      //event listeners click
+      $(this).click(function(){ 
+        var name = this.id.substr(6); 
+        window.location.href = '../'+name;});
+      //event listeners hover
+      $(this).mouseover(function(){
+        var name = this.id.substr(6); 
+        $('#'+name+'_info, #linha_'+name).stop();
+        $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);
+      });
+      $(this).mouseout(function(){
+        var name = this.id.substr(6);
+        $('#'+name+'_info, #linha_'+name).stop();
+        $('#'+name+'_info, #linha_'+name).css('opacity',0);
+      });
     })
   }
   //internas
@@ -115,10 +114,18 @@ function windowHeightUpdated(){
   
   $('body').height(wh);
 }
+function addBrowserClasses(){
+  if ($.browser.msie){
+    $('html').addClass('ie');
+  } else{
+    $('html').addClass('notie');
+  }
+}
 function init(){
   window.addEventListener('load', windowHeightUpdated, true);
   window.addEventListener('resize', windowHeightUpdated, true);
   window.addEventListener('SVGLoad', SVGLoaded, false);
+  addBrowserClasses();
   changeViewport();
 }
 $(init);
