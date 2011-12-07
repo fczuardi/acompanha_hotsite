@@ -1,8 +1,9 @@
 ToDo
 
-- Mouse-overs da home
-- Ajustar comportamento nos iPads/iPhones (zoom inicial?)
+OK - Mouse-overs da home
+OK*- Mouse-overs das internas (opacity .3 em todos os outros)
+OK - Ajustar comportamento nos iPads/iPhones (zoom inicial?)
+
 - Backwards compatibility (IE)
-- Mouse-overs das internas (opacity .3 em todos os outros)
 - Colar imagens de Acompanha, Midiateca e Aplicativos no fim da janela (qdo a janela for grande)
 - Bug(?) de posicionamento impreciso do texto nas curvas (Safari 5.0.5)

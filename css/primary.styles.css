@@ -43,6 +43,7 @@
     font-style: normal;
 }
 body{
+  visibility:hidden;
   background-color:#d5e2f3;
   color:#242967;
   font-family: "DINProRegular";
@@ -229,7 +230,7 @@ line{
   width:377px;
 }
 #sidebar #mySVG{
-  width:377px;
+  width:337px;
 }
 #main #sidebar #menu{
   width:100%;
@@ -239,7 +240,7 @@ body.interna #assinatura{
   background-image:url(../img/assinatura_internas.png);
   position:relative;
   top:53px;
-  left:102px;
+  left:62px;
   height:155px;
 }
 body.interna #assinatura p{
@@ -248,7 +249,7 @@ body.interna #assinatura p{
 body.interna #texto_logo{
   font-size:15px;
   line-height:15px;
-  left:74px;
+  left:34px;
   top:196px;
   width:160px;
 }
@@ -269,7 +270,7 @@ body.interna #texto_logo{
   font-family:'DINProBold';
   color:#fff;
   font-size:14px;
-  padding-left:80px;
+  padding-left:40px;
   padding-right:14px;
   line-height:28px;
   height:28px;
@@ -292,7 +293,7 @@ body.interna #texto_logo{
 #stripe_saraiva,
 #sidebar footer ul a.saraiva_link{
   background-color:#eee;
-  padding-left:112px;
+  padding-left:72px;
   margin-top:28px;
   color:#0067b4;
 }
@@ -305,7 +306,7 @@ body.interna #texto_logo{
 #content{
   position:absolute;
   top:0;
-  left:377px;
+  left:337px;
   width:583px;
   padding-top:43px;
 }
