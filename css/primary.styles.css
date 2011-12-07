@@ -127,6 +127,10 @@ h3{
   top:78px;
   left:387px;
 }
+body.interna #imagemap_bg{
+  top:0px;
+  left:1px;
+}
 #mySVG text{
   fill:#fff;
   font-size:12.5px;
