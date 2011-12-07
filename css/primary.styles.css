@@ -122,6 +122,11 @@ h3{
   font-family: 'DINProMedium';
   display:block;
 }
+#imagemap_bg{
+  position:absolute;
+  top:78px;
+  left:387px;
+}
 #mySVG text{
   fill:#fff;
   font-size:12.5px;
