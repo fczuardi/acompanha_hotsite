@@ -121,8 +121,17 @@ function addBrowserClasses(){
     $('html').addClass('notie');
   }
 }
+function IETweaks(){
+  if ($('html').hasClass('lt-ie7')){
+    DD_belatedPNG.fix('#assinatura');
+  }
+}
+function loaded(){
+  windowHeightUpdated();
+  IETweaks();
+}
 function init(){
-  window.addEventListener('load', windowHeightUpdated, true);
+  window.addEventListener('load', loaded, true);
   window.addEventListener('resize', windowHeightUpdated, true);
   window.addEventListener('SVGLoad', SVGLoaded, false);
   addBrowserClasses();
