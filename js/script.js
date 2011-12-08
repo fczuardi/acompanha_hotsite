@@ -2,14 +2,21 @@
 
 */
 
-var is_iPhone = (navigator.userAgent.match(/iPhone/i) !== null),
-    is_iPad = (navigator.userAgent.match(/iPad/i) !== null);
+//eeeeeeee
 
+var is_iPhone = (navigator.userAgent.match(/iPhone/i) !== null),
+    is_iPad = (navigator.userAgent.match(/iPad/i) !== null),
+    names = ['avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'];
+    
+
+function hideAllInfo(){
+  var elements = '#'+names.join("_info, #")+', #linha_'+names.join(", #linha_");
+  $(elements).css('opacity', 0);
+}
 function SVGLoaded(){
   var anim_duration = 700,
       anim_easing = 'swing',
       items = $('#mySVG .item').get().reverse(),
-      names = ['avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'],
       delayTable = [],
       initialRotationTable = [ 
                                135, 35,
@@ -50,7 +57,9 @@ function SVGLoaded(){
       //event listeners click
       $(this).click(function(){ 
         var name = this.id.substr(6); 
-        window.location.href = '../'+name;});
+        hideAllInfo();
+        window.location.href = '../'+name;
+      });
       //event listeners hover
       $(this).mouseover(function(){
         var name = this.id.substr(6); 

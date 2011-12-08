@@ -3,7 +3,18 @@ ToDo
 OK - Mouse-overs da home
 OK*- Mouse-overs das internas (opacity .3 em todos os outros)
 OK - Ajustar comportamento nos iPads/iPhones (zoom inicial?)
+OK - No Ipad o "saiba mais" ficou na tela... (touch em outro deve esconder os abertos)
 
-- Backwards compatibility (IE)
+
+OK*- Backwards compatibility (IE)
+      - Assinatura mais alta do que deveria nos IEs 6 e 7.
+      Parece q ignora margin-top ou algo parecido.
+      
+      - O img map de midiateca e aplicativos tá esquisito ..
+      Tenho certeza que fiz os contornos direitinho, mas nesses 2 botões, na home, a parte colorida (acima dos textos) não é considerada como área de mouse-over.
+      
+
+
+
 - Colar imagens de Acompanha, Midiateca e Aplicativos no fim da janela (qdo a janela for grande)
 - Bug(?) de posicionamento impreciso do texto nas curvas (Safari 5.0.5)
