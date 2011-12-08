@@ -131,6 +131,17 @@ body.interna #imagemap_bg{
   top:-4px;
   left:1px;
 }
+/*html.lt-ie9 */
+#linhas_over{
+  position:absolute;
+}
+#linhas_over img{display:block;position:absolute;}
+#linha_avaliacao    {top:79px;left:566px;}
+#linha_midiateca    {top:108px;left:620px;}
+#linha_aplicativos  {top:190px;left:731px;}
+#linha_licoes       {top:394px;left:670px;}
+#linha_ebooks       {top:331px;left:717px;}
+#linha_saraiva      {top:538px;left:617px;}
 #mySVG text{
   fill:#fff;
   font-size:12.5px;
@@ -180,6 +191,9 @@ body.interna #imagemap_bg{
 polyline,
 line{
   opacity:0;
+}
+#linhas_over img{
+  display:none;
 }
 
 /* Mouse Over */
