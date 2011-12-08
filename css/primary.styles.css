@@ -163,6 +163,10 @@ body.interna #imagemap_bg{
   top: 373px;
   width: 230px;
 }
+#texto_logo p{
+  margin-top:21px;
+  margin-bottom:21px;
+}
 #texto_logo a{
   color:#242967;
   text-decoration:none;
@@ -203,6 +207,10 @@ line{
   line-height: 1.4em;
   display:none;
   width:200px;
+}
+.info_box p{
+  margin-top:15px;
+  margin-bottom:15px;
 }
 #saraiva_info{
   top: 558px;
@@ -246,9 +254,13 @@ line{
   left:-33px;
   top:188px;
   letter-spacing:0;
+  margin-top:25px;
+  margin-bottom:25px;
 }
 .interna #assinatura p{
   top:115px;
+  margin-top:16px;
+  margin-bottom:16px;
 }
 
 #main #sidebar{
