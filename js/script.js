@@ -2,8 +2,6 @@
 
 */
 
-//eeeeeeee
-
 var is_iPhone = (navigator.userAgent.match(/iPhone/i) !== null),
     is_iPad = (navigator.userAgent.match(/iPad/i) !== null),
     names = ['avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'];
@@ -122,6 +120,10 @@ function windowHeightUpdated(){
   // svg_stage.setAttribute('transform', 'scale('+scaleW+', '+scaleH+')');
   
   $('body').height(wh);
+  $('.bottom').each(function(){
+    console.log($(this).height());
+    $(this).css('top', Math.max((wh-$(this).height()), $(this).data('minTop')));
+  });
 }
 function addBrowserClasses(){
   if ($.browser.msie){
@@ -135,6 +137,14 @@ function IETweaks(){
     DD_belatedPNG.fix('#assinatura, #linha_avaliacao, #linha_midiateca, #linha_aplicativos, #linha_licoes, #linha_ebooks, #linha_saraiva');
   }
 }
+function alturasMinimas(){
+  // alert('am')
+  $('.bottom').each(function(){
+    var top = $(this).position().top;
+    $(this).data('minTop', top);
+  });
+  windowHeightUpdated();
+}
 function loaded(){
   windowHeightUpdated();
   IETweaks();
@@ -145,5 +155,6 @@ function init(){
   window.addEventListener('SVGLoad', SVGLoaded, false);
   addBrowserClasses();
   changeViewport();
+  alturasMinimas();
 }
 $(init);

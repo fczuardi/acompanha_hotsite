@@ -69,11 +69,13 @@ body{
   border:1px solid black;
 }
 .interna #bg_gradiente{
-  top:-470px;
+  display:none;
+/*  top:-470px;
   left:-585px;
   width:1440px;
   height:1440px;
   background-image: none;
+*/
 }
 p a{
 	font-family: 'DINProBold';
@@ -381,35 +383,48 @@ body.slug_acompanha #main{
 body.slug_acompanha #content{
   padding-top:73px;
 }
-body.slug_acompanha #content h3{
-	top:500px;
-}
-body.slug_acompanha #content img{
-	left: 160px;
-	top: 360px;
-}
 
+.bottom{
+  position:absolute;
+	width:583px;
+}
+body.slug_acompanha .bottom{
+	top: 360px;
+	height:516px;
+}
+body.slug_acompanha #content h3{
+	top:140px;
+}
+body.slug_acompanha #content .img_destaque{
+	left: 160px;
+}
+body.slug_aplicativos .bottom{
+	top: 335px;
+	height:700px;
+}
 body.slug_aplicativos #content h1{
   border-color:#902a8e;
 }
 body.slug_aplicativos #content h3{
-	top:445px;
+	top:110px;
 }
-body.slug_aplicativos #content img{
+body.slug_aplicativos #content .img_destaque{
 	left: 110px;
-	top: 335px;
 }
 
+body.slug_midiateca .bottom{
+	top: 285px;
+	height:644px;
+}
 body.slug_midiateca #content  h1{
   border-color:#44a1d0;
 }
 body.slug_midiateca #content h3{
-	top: 403px;
+	top: 118px;
 	left: 230px;
 }
-body.slug_midiateca #content img{
+body.slug_midiateca #content .img_destaque{
 	left: -80px;
-	top: 285px;
 }
 
 body.slug_ebooks #content  h1{
@@ -419,7 +434,7 @@ body.slug_ebooks #content h3{
 	top: 432px;
 	left: 320px;
 }
-body.slug_ebooks #content img{
+body.slug_ebooks #content .img_destaque{
 	left: -90px;
 	top: 306px;
 }
@@ -431,7 +446,7 @@ body.slug_saraiva #content h3{
 	top: 340px;
 	left: 348px;
 }
-body.slug_saraiva #content img{
+body.slug_saraiva #content .img_destaque{
 	left: -100px;
 	top: 276px;
 }
@@ -442,7 +457,7 @@ body.slug_licoes #content  h1{
 body.slug_licoes #content h3{
 	top: 527px;
 }
-body.slug_licoes #content img{
+body.slug_licoes #content .img_destaque{
 	left: 28px;
 	top: 470px;
 }
@@ -454,7 +469,7 @@ body.slug_avaliacao #content h3{
 	top: 435px;
 	left: 250px;
 }
-body.slug_avaliacao #content img{
+body.slug_avaliacao #content .img_destaque{
 	left: -67px;
 	top: 360px;
 }
