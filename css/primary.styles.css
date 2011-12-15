@@ -387,6 +387,7 @@ body.slug_acompanha #content{
 .bottom{
   position:absolute;
 	width:583px;
+	z-index:-1;
 }
 body.slug_acompanha .bottom{
 	top: 360px;

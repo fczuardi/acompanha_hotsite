@@ -111,14 +111,15 @@ function changeViewport(){
 }
 
 function windowHeightUpdated(){
-  var ww = window.innerWidth,
-      wh = window.innerHeight,
+  var ww = $(window).width(),
+      wh = $(window).height(),
       scaleW = ww/100,
       scaleH = wh/100,
       svg_stage = document.getElementById('svg-stage');
 
   // svg_stage.setAttribute('transform', 'scale('+scaleW+', '+scaleH+')');
   
+  // alert($(window).height());
   $('body').height(wh);
   $('.bottom').each(function(){
     console.log($(this).height());
