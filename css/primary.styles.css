@@ -98,6 +98,10 @@ h3{
 	line-height: 26px;
 	font-weight:normal;
 }
+body.home #pre_sidebar,
+body.home #main{
+  top:-50px;
+}
 #main{
   width:960px;
   margin:auto;
