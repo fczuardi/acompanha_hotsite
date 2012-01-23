@@ -22,7 +22,7 @@ function SVGLoaded(){
                                79],
       finalRotationTable = [  
                               -28, -28,
-                              18, 18, 18,
+                              -55, 18, 18,
                               47 ],
       durationTable = [];
   
