@@ -4,7 +4,7 @@
 
 var is_iPhone = (navigator.userAgent.match(/iPhone/i) !== null),
     is_iPad = (navigator.userAgent.match(/iPad/i) !== null),
-    names = ['avaliacao', 'licoes', 'saraiva', 'ebooks', 'midiateca', 'aplicativos'];
+    names = ['avaliacao', 'licoes', 'saraiva', 'midiateca'];
     
 
 function hideAllInfo(){
