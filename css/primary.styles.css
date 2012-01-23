@@ -146,8 +146,7 @@ body.interna #imagemap_bg{
 #linha_midiateca    {top:108px;left:620px;}
 #linha_aplicativos  {top:190px;left:731px;}
 #linha_licoes       {top:394px;left:670px;}
-#linha_ebooks       {top:331px;left:717px;}
-#linha_saraiva      {top:538px;left:617px;}
+#linha_saraiva      {top:331px;left:717px;}
 #mySVG text{
   fill:#fff;
   font-size:12.5px;
@@ -219,8 +218,11 @@ line{
   margin-bottom:15px;
 }
 #saraiva_info{
-  top: 558px;
+  top: 306px;
+  left: 847px;
+/*  top: 558px;
   left: 746px;
+*/
 }
 #avaliacao_info{
   top: 56px;
