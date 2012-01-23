@@ -82,6 +82,12 @@ p a{
 	text-decoration:none;
 	color:#242967;
 }
+p strong{
+	font-family: 'DINProBold';
+	font-weight: normal;
+	text-decoration:none;
+	color:#242967;
+}
 p a:hover{
 	color:#242967;
 	text-decoration:underline;
@@ -424,7 +430,7 @@ body.slug_midiateca .bottom{
 	height:644px;
 }
 body.slug_midiateca #content  h1{
-  border-color:#44a1d0;
+  border-color:#902a8e;
 }
 body.slug_midiateca #content h3{
 	top: 118px;
@@ -447,36 +453,36 @@ body.slug_ebooks #content .img_destaque{
 }
 
 body.slug_saraiva #content  h1{
-  border-color:#f2812e;
+  border-color:#363390;
 }
 body.slug_saraiva #content h3{
-	top: 340px;
+	top: 390px;
 	left: 348px;
 }
 body.slug_saraiva #content .img_destaque{
 	left: -100px;
-	top: 276px;
+	top: 305px;
 }
 
 body.slug_licoes #content  h1{
   border-color:#007882;
 }
 body.slug_licoes #content h3{
-	top: 527px;
+	top: 595px;
 }
 body.slug_licoes #content .img_destaque{
 	left: 28px;
-	top: 470px;
+	top: 520px;
 }
 
 body.slug_avaliacao #content  h1{
   border-color:#9ac946;
 }
 body.slug_avaliacao #content h3{
-	top: 435px;
+	top: 485px;
 	left: 250px;
 }
 body.slug_avaliacao #content .img_destaque{
 	left: -67px;
-	top: 360px;
+	top: 420px;
 }
