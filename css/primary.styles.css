@@ -170,7 +170,7 @@ body.interna #imagemap_bg{
   opacity:0;
 }
 #texto_logo{
-  font-family: 'DINProBold';
+	font-family: 'DINProBold';
   font-size: 21px;
   left: 376px;
   line-height: 21px;
@@ -184,6 +184,7 @@ body.interna #imagemap_bg{
   margin-bottom:21px;
 }
 #texto_logo a{
+	font-family: 'DINProBold';
   color:#242967;
   text-decoration:none;
   font-weight:normal;
