@@ -408,10 +408,12 @@ body.slug_acompanha .bottom{
 	height:516px;
 }
 body.slug_acompanha #content h3{
-	top:140px;
+	top: 140px;
+	left: 300px;
 }
 body.slug_acompanha #content .img_destaque{
-	left: 160px;
+	left:0px;
+	top:39px;
 }
 body.slug_aplicativos .bottom{
 	top: 335px;
@@ -439,7 +441,8 @@ body.slug_midiateca #content h3{
 	left: 230px;
 }
 body.slug_midiateca #content .img_destaque{
-	left: -80px;
+	left: -40px;
+	top: 86px;
 }
 
 body.slug_ebooks #content  h1{
@@ -473,18 +476,18 @@ body.slug_licoes #content h3{
 	top: 595px;
 }
 body.slug_licoes #content .img_destaque{
-	left: 28px;
-	top: 520px;
+	left: 50px;
+	top: 604px;
 }
 
 body.slug_avaliacao #content  h1{
   border-color:#9ac946;
 }
 body.slug_avaliacao #content h3{
-	top: 485px;
-	left: 250px;
+	left: 0px;
+	top: 469px;
 }
 body.slug_avaliacao #content .img_destaque{
-	left: -67px;
-	top: 420px;
+	left: -21px;
+	top: 550px;
 }
