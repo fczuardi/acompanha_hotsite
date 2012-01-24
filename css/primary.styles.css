@@ -46,7 +46,8 @@ body{
   visibility:hidden;
   background-color:#D5E2F3;
   color:#242967;
-  font-family: "DINProRegular";
+/*  font-family: "DINProRegular";*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 15px;
   height:1000px;
 }
@@ -78,13 +79,16 @@ body{
 */
 }
 p a{
-	font-family: 'DINProBold';
+/*	font-family: 'DINProBold';*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-weight: bold;
 	text-decoration:none;
 	color:#242967;
 }
 p strong{
-	font-family: 'DINProBold';
-	font-weight: normal;
+/*	font-family: 'DINProBold';*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+/*	font-weight: normal;*/
 	text-decoration:none;
 	color:#242967;
 }
@@ -99,10 +103,11 @@ body.home{
 /*  overflow:hidden;*/
 }
 h3{
-	font-family: "DINProBold";
+/*	font-family: "DINProBold";*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 21px;
 	line-height: 26px;
-	font-weight:normal;
+/*	font-weight:normal;*/
 }
 body.home #pre_sidebar,
 body.home #main{
@@ -165,7 +170,7 @@ body.interna #imagemap_bg{
   opacity:0;
 }
 #texto_logo{
-  font-family: DINProBold;
+  font-family: 'DINProBold';
   font-size: 21px;
   left: 376px;
   line-height: 21px;
@@ -197,7 +202,8 @@ body.interna #imagemap_bg{
 #chamada p a{
   color:#fff;
   font-size:14px;
-  font-family:"DINProBold";
+/*  font-family:"DINProBold";*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   text-decoration:none;
   line-height: 28px;
   margin-left: 11px;
@@ -263,7 +269,8 @@ line{
   background-image:url(../img/assinatura_home.png);
 }
 #assinatura p{
-  font-family: 'DINProBold';
+/*  font-family: 'DINProBold';*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size:25px;
   position:absolute;
   bottom:0;
@@ -320,7 +327,8 @@ body.interna #texto_logo{
 #chamada,
 #sidebar footer ul a{
   text-decoration:none;
-  font-family:'DINProBold';
+/*  font-family:'DINProBold';*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   color:#fff;
   font-size:14px;
   padding-left:40px;
@@ -376,7 +384,8 @@ body.interna #texto_logo{
 }
 #content h1{
   line-height:40px;
-  font-family:"DINProBold";
+/*  font-family:"DINProBold";*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   border-bottom:25px solid #242967;
   padding-bottom:10px;
 }
@@ -405,15 +414,16 @@ body.slug_acompanha #content{
 }
 body.slug_acompanha .bottom{
 	top: 360px;
-	height:516px;
+	height:550px;
 }
 body.slug_acompanha #content h3{
 	top: 140px;
 	left: 300px;
+	width: 295px;
 }
 body.slug_acompanha #content .img_destaque{
 	left:0px;
-	top:39px;
+	top:73px;
 }
 body.slug_aplicativos .bottom{
 	top: 335px;
