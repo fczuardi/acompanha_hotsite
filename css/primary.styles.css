@@ -136,7 +136,8 @@ body.home #main{
   background-position:111px -78px;
   background-size:760px;
   background-repeat:no-repeat;
-  font-family: 'DINProMedium';
+/*  font-family: 'DINProMedium';*/
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   display:block;
 }
 #imagemap_bg{
