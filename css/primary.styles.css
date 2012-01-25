@@ -127,6 +127,36 @@ body.home #main{
   margin-right:480px; /* 960/2 */
 /*  background-color:rgba(255,0,0,0.5);*/
 }
+/* Menu da Home */
+
+#menu_principal{
+  width:346px;
+  height:395px;
+  top:136px;
+  left:385px;
+  position:absolute;
+  z-index:3;
+}
+#menu_principal div{
+  position:absolute;
+  width:346px;
+  height:395px;
+}
+#menu_principal #logo_mascara{
+  background-image:url(../img/menu_0_acompanha.png);
+}
+#menu_principal #item_avaliacao{
+  background-image:url(../img/menu_1_avaliacao.png);
+}
+#menu_principal #item_atividades_multimidia{
+  background-image:url(../img/menu_2_atividades_multimidia.png);
+}
+#menu_principal #item_midiateca{
+  background-image:url(../img/menu_3_midiateca.png);
+}
+#menu_principal #item_saraiva_educa{
+  background-image:url(../img/menu_4_saraiva_educa.png);
+}
 /*SVG da Home*/
 #mySVG{
   position:absolute;
