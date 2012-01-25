@@ -472,7 +472,7 @@ body.slug_aplicativos #content .img_destaque{
 }
 
 body.slug_midiateca .bottom{
-	top: 285px;
+	top: 215px;
 	height:644px;
 }
 body.slug_midiateca #content  h1{
@@ -504,22 +504,23 @@ body.slug_saraiva #content  h1{
 }
 body.slug_saraiva #content h3{
 	top: 390px;
-	left: 348px;
+	left: 400px;
 }
 body.slug_saraiva #content .img_destaque{
 	left: -100px;
-	top: 305px;
+	top: 285px;
 }
 
 body.slug_licoes #content  h1{
   border-color:#007882;
 }
 body.slug_licoes #content h3{
-	top: 595px;
+	top: 515px;
+	width: 290px;
 }
 body.slug_licoes #content .img_destaque{
-	left: 50px;
-	top: 604px;
+	left: 120px;
+	top: 544px;
 }
 
 body.slug_avaliacao #content  h1{
@@ -527,9 +528,15 @@ body.slug_avaliacao #content  h1{
 }
 body.slug_avaliacao #content h3{
 	left: 0px;
-	top: 469px;
+	top: 400px;
 }
 body.slug_avaliacao #content .img_destaque{
 	left: -21px;
-	top: 550px;
+	top: 505px;
+}
+body.slug_contato h3.email{
+	margin-bottom:0px;
+}
+body.slug_contato p.email{
+	margin-top:0px;
 }
