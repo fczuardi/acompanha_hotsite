@@ -224,6 +224,7 @@ body.interna #imagemap_bg{
   text-align: center;
   top: 373px;
   width: 230px;
+	z-index:5;
 }
 #texto_logo p{
   margin-top:21px;
