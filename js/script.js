@@ -14,16 +14,41 @@ function hideAllInfo(){
 
 function PNGLoaded(){
   console.log('start!');
-  var elements = '#item_'+names.join(", #item_");
-  var initialRotationTable = [ -107, -185, -32, -76];
-  console.log($(elements));
-  $(elements).each(function(index, element){
-    console.log(element);
-    console.log('rotate('+initialRotationTable[index]+'deg)');
-    $(element).css('transform', 'rotate('+initialRotationTable[index]+'deg)');
-    $(element).animate({'transform':'rotate(0deg)'})
-  });
-  //     $('#hover_'+names.join(", #hover_")).each(function(index){
+  var anim_easing = 'swing';
+  //avaliacao, attividades, saraivaeduca, midiateca
+  var initialRotationTable = [ 185, 79, -76, -32];
+  var delayTable = [0, 700*0.5, 2*700*0.5, 3*700*0.5]; 
+  var durationTable = [700, 700, 700, 700];
+  for (var i=0; i<names.length; i++){
+    name = names[i];
+    $('#item_'+name).css('transform', 'rotate('+initialRotationTable[i]+'deg)');
+    $('#item_'+name).delay(delayTable[i]).animate({'transform':'rotate(0deg)'}, durationTable[i], anim_easing)
+  }
+
+  //home
+  if($('body').hasClass('home')){
+    //event listenersvhover
+    $('#hover_'+names.join(", #hover_")).each(function(index){
+      //event listeners hover
+      $(this).mouseover(function(){
+        var name = this.id.substr(6); 
+        $('#'+name+'_info, #linha_'+name).stop();
+        $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);
+      });
+      $(this).mouseout(function(){
+        var name = this.id.substr(6);
+        $('#'+name+'_info, #linha_'+name).stop();
+        $('#'+name+'_info, #linha_'+name).css('opacity',0);
+      });
+    })
+  }
+  //internas
+  if($('body').hasClass('interna')){
+    $(items).click(function(){ var name = this.id.substr(5); window.location.href = '../'+name;});
+  }
+
+
+
 }
 
 // function SVGLoaded(){
