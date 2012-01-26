@@ -193,10 +193,10 @@ body.interna #imagemap_bg{
   z-index:4;
 }
 #linhas_over img{display:block;position:absolute;}
-#linha_avaliacao              {top:79px;left:566px;}
-#linha_midiateca              {top:108px;left:620px;}
-#linha_atividades_multimidia  {top:394px;left:670px;}
-#linha_saraiva_educa          {top:331px;left:717px;}
+#linha_avaliacao              {top:87px;left:570px;}
+#linha_midiateca              {top:140px;left:655px;}
+#linha_atividades_multimidia  {top:410px;left:667px;}
+#linha_saraiva_educa          {top:311px;left:718px;}
 #mySVG text{
   fill:#fff;
   font-size:12.5px;
@@ -272,7 +272,7 @@ line{
   margin-bottom:15px;
 }
 #saraiva_educa_info{
-  top: 306px;
+  top: 265px;
   left: 847px;
 }
 #avaliacao_info{
@@ -285,7 +285,7 @@ line{
 }
 #midiateca_info{
   top: 84px;
-  left: 795px;
+  left: 846px;
 }
 
 #assinatura{
