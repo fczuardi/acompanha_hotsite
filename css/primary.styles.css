@@ -136,14 +136,21 @@ body.home #main{
   left:385px;
   position:absolute;
   z-index:3;
+  overflow:hidden;
 }
 #menu_principal div{
   position:absolute;
   width:346px;
   height:395px;
+  -webkit-transform-origin: 101px 214px; /* 100 x 216 ? */
+  -moz-transform-origin: 101px 214px; /* 100 x 216 ? */
+  transform-origin: 102px 214px;
 }
-#menu_principal #logo_mascara{
-  background-image:url(../img/menu_0_acompanha.png);
+#menu_principal #logo_mascara img{
+  position:absolute;
+  top:0px;
+  left:0;
+/*  background-image:url(../img/menu_0_acompanha.png);*/
 }
 #menu_principal #item_avaliacao{
   background-image:url(../img/menu_1_avaliacao.png);

@@ -4,78 +4,93 @@
 
 var is_iPhone = (navigator.userAgent.match(/iPhone/i) !== null),
     is_iPad = (navigator.userAgent.match(/iPad/i) !== null),
-    names = ['avaliacao', 'licoes', 'saraiva', 'midiateca'];
+    names = ['avaliacao', 'atividades_multimidia', 'saraiva_educa', 'midiateca'];
     
 
 function hideAllInfo(){
   var elements = '#'+names.join("_info, #")+', #linha_'+names.join(", #linha_");
   $(elements).css('opacity', 0);
 }
-function SVGLoaded(){
-  var anim_duration = 700,
-      anim_easing = 'swing',
-      items = $('#mySVG .item').get().reverse(),
-      delayTable = [],
-      initialRotationTable = [ 
-                               135, 35,
-                               -134, -90, -18,
-                               79],
-      finalRotationTable = [  
-                              -28, -28,
-                              -55, 18, 18,
-                              47 ],
-      durationTable = [];
-  
-  delayTable.push(0);
-  for (var i=0;i<=4;i++){
-    delayTable.push(delayTable[i]+anim_duration/2);
-  }
-  delayTable[3] -= anim_duration * 0.25;
-  delayTable[4] -= anim_duration * 0.10;
-  delayTable[5] -= anim_duration * 0.40;
-  for (var i=0;i<items.length;i++){
-    durationTable.push(anim_duration);
-  }
-  durationTable[1] = anim_duration * 0.70;
-  durationTable[4] = anim_duration * 0.50;
-  durationTable[5] = anim_duration * 0.50;
 
-  //animacao
-  $(items).each(function(index, element){
-    $(element).attr('transform','scale(1) rotate('+(initialRotationTable[index])+')');
-    $(this).delay(delayTable[index]).animate({opacity:1, svgTransform:'scale(1) rotate('+finalRotationTable[index]+')'}, durationTable[index], anim_easing);
+function PNGLoaded(){
+  console.log('start!');
+  var elements = '#item_'+names.join(", #item_");
+  var initialRotationTable = [ -107, -185, -32, -76];
+  console.log($(elements));
+  $(elements).each(function(index, element){
+    console.log(element);
+    console.log('rotate('+initialRotationTable[index]+'deg)');
+    $(element).css('transform', 'rotate('+initialRotationTable[index]+'deg)');
+    $(element).animate({'transform':'rotate(0deg)'})
   });
-  $('#logo').animate({opacity:1}, 1000, 'swing');
-  
-  //home
-  if($('body').hasClass('home')){
-    //event listenersvhover
-    $('#hover_'+names.join(", #hover_")).each(function(index){
-      $(this).attr('transform','rotate('+finalRotationTable[names.length-1-index]+')')
-      //event listeners click
-      $(this).click(function(){ 
-        var name = this.id.substr(6); 
-        hideAllInfo();
-        window.location.href = '../'+name;
-      });
-      //event listeners hover
-      $(this).mouseover(function(){
-        var name = this.id.substr(6); 
-        $('#'+name+'_info, #linha_'+name).stop();
-        $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);
-      });
-      $(this).mouseout(function(){
-        var name = this.id.substr(6);
-        $('#'+name+'_info, #linha_'+name).stop();
-        $('#'+name+'_info, #linha_'+name).css('opacity',0);
-      });
-    })
-  }
-  //internas
-  if($('body').hasClass('interna')){
-    $(items).click(function(){ var name = this.id.substr(5); window.location.href = '../'+name;});
-  }
+  //     $('#hover_'+names.join(", #hover_")).each(function(index){
 }
+
+// function SVGLoaded(){
+//   var anim_duration = 700,
+//       anim_easing = 'swing',
+//       items = $('#mySVG .item').get().reverse(),
+//       delayTable = [],
+//       initialRotationTable = [ 
+//                                135, 35,
+//                                -134, -90, -18,
+//                                79],
+//       finalRotationTable = [  
+//                               -28, -28,
+//                               -55, 18, 18,
+//                               47 ],
+//       durationTable = [];
+//   
+//   delayTable.push(0);
+//   for (var i=0;i<=4;i++){
+//     delayTable.push(delayTable[i]+anim_duration/2);
+//   }
+//   delayTable[3] -= anim_duration * 0.25;
+//   delayTable[4] -= anim_duration * 0.10;
+//   delayTable[5] -= anim_duration * 0.40;
+//   for (var i=0;i<items.length;i++){
+//     durationTable.push(anim_duration);
+//   }
+//   durationTable[1] = anim_duration * 0.70;
+//   durationTable[4] = anim_duration * 0.50;
+//   durationTable[5] = anim_duration * 0.50;
+// 
+//   //animacao
+//   $(items).each(function(index, element){
+//     $(element).attr('transform','scale(1) rotate('+(initialRotationTable[index])+')');
+//     $(this).delay(delayTable[index]).animate({opacity:1, svgTransform:'scale(1) rotate('+finalRotationTable[index]+')'}, durationTable[index], anim_easing);
+//   });
+//   $('#logo').animate({opacity:1}, 1000, 'swing');
+//   
+//   //home
+//   if($('body').hasClass('home')){
+//     //event listenersvhover
+//     $('#hover_'+names.join(", #hover_")).each(function(index){
+//       $(this).attr('transform','rotate('+finalRotationTable[names.length-1-index]+')')
+//       //event listeners click
+//       $(this).click(function(){ 
+//         var name = this.id.substr(6); 
+//         hideAllInfo();
+//         window.location.href = '../'+name;
+//       });
+//       //event listeners hover
+//       $(this).mouseover(function(){
+//         var name = this.id.substr(6); 
+//         $('#'+name+'_info, #linha_'+name).stop();
+//         $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);
+//       });
+//       $(this).mouseout(function(){
+//         var name = this.id.substr(6);
+//         $('#'+name+'_info, #linha_'+name).stop();
+//         $('#'+name+'_info, #linha_'+name).css('opacity',0);
+//       });
+//     })
+//   }
+//   //internas
+//   if($('body').hasClass('interna')){
+//     $(items).click(function(){ var name = this.id.substr(5); window.location.href = '../'+name;});
+//   }
+// }
 function changeViewport(){
   if (is_iPhone || is_iPad) {
     var viewportmeta = document.querySelector('meta[name="viewport"]');
@@ -149,11 +164,12 @@ function alturasMinimas(){
 function loaded(){
   windowHeightUpdated();
   IETweaks();
+  PNGLoaded();
 }
 function init(){
   window.addEventListener('load', loaded, true);
   window.addEventListener('resize', windowHeightUpdated, true);
-  window.addEventListener('SVGLoad', SVGLoaded, false);
+  // window.addEventListener('SVGLoad', SVGLoaded, false);
   addBrowserClasses();
   changeViewport();
   alturasMinimas();
