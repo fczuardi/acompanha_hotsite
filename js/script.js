@@ -21,6 +21,7 @@ function PNGLoaded(){
   var durationTable = [1200, 1200, 800, 800];
 	var offsetTopTable = [1, 1, -5, -5];
 	var offsetLeftTable = [-2, -2, 0, 0];
+	$('#menu_principal').addClass('loaded');
   for (var i=0; i<names.length; i++){
     name = names[i];
     $('#item_'+name).css('transform', 'rotate('+initialRotationTable[i]+'deg)');
