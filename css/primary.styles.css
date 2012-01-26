@@ -308,7 +308,7 @@ line{
 #assinatura p{
 /*  font-family: 'DINProBold';*/
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  font-size:25px;
+  font-size:24px;
   position:absolute;
   bottom:0;
   left:-33px;
@@ -316,6 +316,7 @@ line{
   letter-spacing:0;
   margin-top:25px;
   margin-bottom:25px;
+	font-weight:bold;
 }
 .interna #assinatura p{
   top:115px;
@@ -412,7 +413,7 @@ body.interna #texto_logo{
 #content h2{
   margin:0;
   text-transform:uppercase;
-  font-weight:normal;
+  font-weight:bold;
 }
 #content h2{
   font-size:29px;
@@ -451,16 +452,16 @@ body.slug_acompanha #content{
 }
 body.slug_acompanha .bottom{
 	top: 360px;
-	height:550px;
+	height:570px;
 }
 body.slug_acompanha #content h3{
-	top: 140px;
-	left: 300px;
-	width: 295px;
+	top: 150px;
+	left: 0px;
+	width: 300px;
 }
 body.slug_acompanha #content .img_destaque{
-	left:0px;
-	top:73px;
+	left: 70px;
+	top: 88px;
 }
 body.slug_aplicativos .bottom{
 	top: 335px;
@@ -508,23 +509,24 @@ body.slug_saraiva #content  h1{
   border-color:#363390;
 }
 body.slug_saraiva #content h3{
-	top: 390px;
-	left: 400px;
+	top: 340px;
+	left: 0;
+	width: 280px;
 }
 body.slug_saraiva #content .img_destaque{
-	left: -100px;
-	top: 285px;
+	left: 90px;
+	top: 360px;
 }
 
 body.slug_licoes #content  h1{
   border-color:#007882;
 }
 body.slug_licoes #content h3{
-	top: 515px;
+	top: 550px;
 	width: 290px;
 }
 body.slug_licoes #content .img_destaque{
-	left: 120px;
+	left: 30px;
 	top: 544px;
 }
 
