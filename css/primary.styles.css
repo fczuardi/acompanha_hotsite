@@ -340,8 +340,9 @@ line{
   font-size:16px;
 }
 
+area,
 #sidebar a{
-  outline: none;
+  outline: 0;
 }
 
 #main #sidebar{
