@@ -192,7 +192,7 @@ function loaded(){
 }
 function init(){
   window.addEventListener('load', loaded, true);
-  window.addEventListener('resize', windowHeightUpdated, true);
+  // window.addEventListener('resize', windowHeightUpdated, true);
   // window.addEventListener('SVGLoad', SVGLoaded, false);
   addBrowserClasses();
   changeViewport();
