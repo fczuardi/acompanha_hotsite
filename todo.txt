@@ -3,11 +3,8 @@ OK - Home: inserir botão "Já é usuário" direcionando para o site www.saraiva
 OK - Módulo 1 “Avaliação e banco de questões”: no lugar de “áreas do conhecimento”, alterar para “áreas do saber”
 OK - quando clicar no pack + logo "A" deve direcionar para o Acompanha
 OK - o menu está deslocando no Safari, iPad e iPhone
-- quando clicar em "Clique e Adquira o Acompanha" deve abrir em uma tela com os contatos email (acompanha@editorasaraiva.com.br) e telefones (os mesmos do Fale Conosco)
-
-
-- arrumar a imagem do imagemapbg da home para o IE
+OK - quando clicar em "Clique e Adquira o Acompanha" deve abrir em uma tela com os contatos email (acompanha@editorasaraiva.com.br) e telefones (os mesmos do Fale Conosco)
+OK - tirar o outline do clique no link da sidebar
+OK - arrumar o imagemapbg da home para o IE
 - animar o menu das internas
-- tirar o outline do clique no link da sidebar
-
 

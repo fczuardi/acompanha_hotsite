@@ -330,6 +330,10 @@ line{
   font-size:16px;
 }
 
+#sidebar a{
+  outline: none;
+}
+
 #main #sidebar{
   width:377px;
 }
@@ -452,7 +456,8 @@ body.interna #texto_logo{
   position:absolute;
   z-index:-1;
 }
-body.slug_contato #content h3{
+body.slug_contato #content h3,
+body.slug_adquira #content h3{
   position:relative;
 } 
 body.slug_acompanha #main{
@@ -559,9 +564,12 @@ body.slug_avaliacao #content .img_destaque{
 	left: -21px;
 	top: 505px;
 }
-body.slug_contato h3.email{
+
+body.slug_contato h3.email,
+body.slug_adquira h3.email{
 	margin-bottom:0px;
 }
-body.slug_contato p.email{
+body.slug_contato p.email,
+body.slug_adquira p.email{
 	margin-top:0px;
 }
