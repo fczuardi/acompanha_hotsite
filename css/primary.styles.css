@@ -130,21 +130,22 @@ body.home #main{
 /* Menu da Home */
 
 #menu_principal{
-  width:346px;
-  height:395px;
-  top:136px;
-  left:385px;
+  width:500px;
+  height:500px;
+  top:99px;
+  left:236px;
   position:absolute;
   z-index:3;
   overflow:hidden;
 }
 #menu_principal div{
   position:absolute;
-  width:346px;
-  height:395px;
-  -webkit-transform-origin: 102px 214px; /* 100 x 216 ? */
-  -moz-transform-origin: 102px 214px; /* 100 x 216 ? */
+  width:500px;
+  height:500px;
+/*  -webkit-transform-origin: 102px 214px;
+  -moz-transform-origin: 102px 214px;
   transform-origin: 102px 214px;
+*/
   display:none;
 }
 #menu_principal.loaded div{
@@ -155,22 +156,22 @@ body.home #main{
 }
 #menu_principal #logo_mascara img{
   position:absolute;
-  top:0px;
+  top:1px;
   left:0;
   z-index:10;
 /*  background-image:url(../img/menu_0_acompanha.png);*/
 }
 #menu_principal #item_avaliacao{
-  background-image:url(../img/menu_1_avaliacao.png);
+  background-image:url(../img/menu_1_avaliacao_QUADRADO.png);
 }
 #menu_principal #item_atividades_multimidia{
-  background-image:url(../img/menu_2_atividades_multimidia.png);
+  background-image:url(../img/menu_2_atividades_multimidia_QUADRADO.png);
 }
 #menu_principal #item_midiateca{
-  background-image:url(../img/menu_3_midiateca.png);
+  background-image:url(../img/menu_3_midiateca_QUADRADO.png);
 }
 #menu_principal #item_saraiva_educa{
-  background-image:url(../img/menu_4_saraiva_educa.png);
+  background-image:url(../img/menu_4_saraiva_educa_QUADRADO.png);
 }
 /*SVG da Home*/
 #mySVG{
@@ -298,6 +299,7 @@ line{
 
 #assinatura{
   position:absolute;
+  z-index:5;
   top:343px;
   left:110px;
   width:311px;

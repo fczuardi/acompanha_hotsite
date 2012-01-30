@@ -19,14 +19,14 @@ function PNGLoaded(){
   var initialRotationTable = [ 185, 79, -76, -32];
   var delayTable = [0, 700*0.5, 2*700*0.5, 3*700*0.5]; 
   var durationTable = [1200, 1200, 800, 800];
-	var offsetTopTable = [1, 1, -5, -5];
-	var offsetLeftTable = [-2, -2, 0, 0];
+  // var offsetTopTable = [1, 1, -5, -5];
+  // var offsetLeftTable = [-2, -2, 0, 0];
 	$('#menu_principal').addClass('loaded');
   for (var i=0; i<names.length; i++){
     name = names[i];
     $('#item_'+name).css('transform', 'rotate('+initialRotationTable[i]+'deg)');
-		$('#item_'+name).css('top', offsetTopTable[i]);
-		$('#item_'+name).css('left', offsetLeftTable[i]);
+    // $('#item_'+name).css('top', offsetTopTable[i]);
+    // $('#item_'+name).css('left', offsetLeftTable[i]);
 		$('#item_'+name).delay(delayTable[i]).animate({'transform':'rotate(0deg)', 'top':0, 'left':0}, durationTable[i], anim_easing)
   }
 
