@@ -364,7 +364,7 @@ body.interna #texto_logo{
   padding:0;
 }
 
-#chamada,
+#chamada p,
 #sidebar footer ul a{
   text-decoration:none;
 /*  font-family:'DINProBold';*/
@@ -376,6 +376,12 @@ body.interna #texto_logo{
   line-height:28px;
   height:28px;
   display:inline-block;
+}
+#chamada p{
+  display:block;
+}
+#chamada p.fale_conosco{
+  background-color:#39A0D2;
 }
 #pre_sidebar{
   padding-top:633px;
