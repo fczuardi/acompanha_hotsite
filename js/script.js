@@ -16,7 +16,7 @@ function PNGLoaded(){
   console.log('start!');
   var anim_easing = 'swing';
   //avaliacao, attividades, saraivaeduca, midiateca
-  var initialRotationTable = [ 185, 79, -76, -32];
+  var initialRotationTable = [ 185, 79, -77, -33];
   var delayTable = [0, 700*0.5, 2*700*0.5, 3*700*0.5]; 
   var durationTable = [1200, 1200, 800, 800];
   // var offsetTopTable = [1, 1, -5, -5];

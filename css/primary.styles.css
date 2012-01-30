@@ -156,7 +156,7 @@ body.home #main{
 }
 #menu_principal #logo_mascara img{
   position:absolute;
-  top:1px;
+  top:2px;
   left:0;
   z-index:10;
 /*  background-image:url(../img/menu_0_acompanha.png);*/
