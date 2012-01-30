@@ -174,7 +174,7 @@ function addBrowserClasses(){
 }
 function IETweaks(){
   if ($('html').hasClass('lt-ie7')){
-    DD_belatedPNG.fix('#assinatura, #linha_avaliacao, #linha_midiateca, #linha_aplicativos, #linha_licoes, #linha_ebooks, #linha_saraiva');
+    DD_belatedPNG.fix('#assinatura, #linha_avaliacao, #linha_midiateca, #linha_atividades_multimidia, #linha_saraiva_educa');
   }
 }
 function alturasMinimas(){
