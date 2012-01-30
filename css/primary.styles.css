@@ -306,23 +306,28 @@ line{
   background-repeat:no-repeat;
   background-image:url(../img/assinatura_home.png);
 }
-#assinatura p{
+.home #assinatura p a{
+  top:0px;
+  padding-top:213px;
+}
+#assinatura p a{
 /*  font-family: 'DINProBold';*/
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size:24px;
   position:absolute;
   bottom:0;
   left:-33px;
-  top:188px;
   letter-spacing:0;
-  margin-top:25px;
   margin-bottom:25px;
 	font-weight:bold;
+	text-decoration:none;
 }
-.interna #assinatura p{
-  top:115px;
-  margin-top:16px;
+
+.interna #assinatura p a{
+  top:0px;
+  padding-top:131px;
   margin-bottom:16px;
+  font-size:16px;
 }
 
 #main #sidebar{
@@ -333,7 +338,7 @@ line{
 }
 #main #sidebar #menu{
   width:100%;
-  height:350px;
+  height:335px;
 }
 body.interna #assinatura{
   background-image:url(../img/assinatura_internas.png);
@@ -341,9 +346,6 @@ body.interna #assinatura{
   top:53px;
   left:62px;
   height:155px;
-}
-body.interna #assinatura p{
-  font-size:16px;
 }
 body.interna #texto_logo{
   font-size:15px;

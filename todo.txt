@@ -1,13 +1,13 @@
 OK - Home: inserir botão "Fale Conosco" direcionando para a interna
 OK - Home: inserir botão "Já é usuário" direcionando para o site www.saraivaacompanha.com.br
 OK - Módulo 1 “Avaliação e banco de questões”: no lugar de “áreas do conhecimento”, alterar para “áreas do saber”
+OK - quando clicar no pack + logo "A" deve direcionar para o Acompanha
 - quando clicar em "Clique e Adquira o Acompanha" deve abrir em uma tela com os contatos email (acompanha@editorasaraiva.com.br) e telefones (os mesmos do Fale Conosco)
+- o menu está deslocando no Safari, iPad e iPhone
 
 
 - arrumar a imagem do imagemapbg da home para o IE
 - animar o menu das internas
-
-- quando clicar no pack + logo "A" deve direcionar para o Acompanha
-- o menu está deslocando no Safari, iPad e iPhone
-
 - tirar o outline do clique no link da sidebar
+
+
