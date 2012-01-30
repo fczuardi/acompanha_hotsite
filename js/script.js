@@ -192,8 +192,7 @@ function loaded(){
 }
 function init(){
   $(window).load(loaded);  
-  window.addEventListener('resize', windowHeightUpdated, true);
-  // window.addEventListener('SVGLoad', SVGLoaded, false);
+  $(window).resize(windowHeightUpdated);
   addBrowserClasses();
   changeViewport();
   alturasMinimas();
