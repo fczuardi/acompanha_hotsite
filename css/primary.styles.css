@@ -368,8 +368,8 @@ body.interna #texto_logo{
   width:160px;
 }
 #main #sidebar footer{
-  position:relative;
-  top:128px;
+  position:absolute;
+  top:633px;
 }
 
 #sidebar ul{
