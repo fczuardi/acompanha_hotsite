@@ -46,6 +46,22 @@
     <div id="sidebar">
       <div id="bg_gradiente"></div>
       <div id="menu">
+        <!--[if gt IE 8]><!-->
+          <map id="imagemap" name="imagemap">
+            <area shape="poly" id="hover_avaliacao"             href="../avaliacao"  coords="151,76,173,116,218,95,262,95,309,105,356,134,389,178,402,212,446,203,426,152,397,113,356,80,299,54,247,49,194,59,164,69,164,69,156,73" />
+            <area shape="poly" id="hover_midiateca"             href="../midiateca"  coords="369,37,348,76,370,87,390,106,410,128,423,148,427,153,464,129,438,95,415,69,391,50" />
+            <area shape="poly" id="hover_atividades_multimidia" href="../licoes"     coords="401,212,445,202,450,234,449,265,445,297,433,330,417,362,391,392,360,418,336,430,317,391,354,369,382,334,401,290,406,255,405,233" />
+            <area shape="poly" id="hover_saraiva_educa"         href="../saraiva"    coords="425,150,463,131,482,173,491,210,494,255,490,296,485,314,443,301,451,264,451,225,439,181,429,158" />
+          </map>
+          <div id="menu_principal">
+            <div id="item_avaliacao"></div>
+            <div id="item_atividades_multimidia"></div>
+            <div id="item_midiateca"></div>
+            <div id="item_saraiva_educa"></div>
+            <div id="logo_mascara"><img id ="imagemap_bg" src="../img/menu_0_acompanha_QUADRADO.png" usemap="#imagemap"></div>
+          </div>
+        <!--<![endif]-->
+        <!--[if lt IE 9]>
         <map id="imgmap" name="imgmap">
           <area shape="poly" alt="avaliacao" title="" coords="43,56,77,43,109,41,148,45,178,60,206,79,226,105,226,105,241,135,212,145,197,116,175,91,139,73,95,69,58,81" href="../avaliacao" target="" />
           <area shape="poly" alt="midiateca" title="" coords="162,18,196,35,225,55,240,73,217,91,198,72,177,56,152,45" href="../midiateca" target="" />
@@ -53,6 +69,7 @@
           <area shape="poly" alt="saraiva" title="" coords="255,96,269,133,277,174,278,196,247,192,247,158,239,128,228,110,216,91,240,73" href="../saraiva" target="" />
         </map>
           <img id ="imagemap_bg" src="../img/iefallback_interna.png" usemap="#imgmap">
+          <![endif]-->
         <div id="texto_logo">
           <p><a href="../acompanha">ACOMPANHA APRENDIZAGEM</a></p>
         </div>
@@ -93,6 +110,7 @@
   <![endif]-->
 
   <!-- scripts concatenated and minified via build script -->
+  <script defer src="../js/libs/jquery.transform.light.js"></script>
   <script defer src="../js/plugins.js"></script>
   <script defer src="../js/script.js"></script>
   <!-- end scripts -->

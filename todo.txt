@@ -6,5 +6,5 @@ OK - o menu está deslocando no Safari, iPad e iPhone
 OK - quando clicar em "Clique e Adquira o Acompanha" deve abrir em uma tela com os contatos email (acompanha@editorasaraiva.com.br) e telefones (os mesmos do Fale Conosco)
 OK - tirar o outline do clique no link da sidebar
 OK - arrumar o imagemapbg da home para o IE
-- animar o menu das internas
+OK - animar o menu das internas
 
