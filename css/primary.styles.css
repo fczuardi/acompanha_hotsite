@@ -242,7 +242,6 @@ body.interna #imagemap_bg{
 #chamada{
   position:absolute;
   top:633px;
-  background-color:#007883;
   margin-left:-3;
 }
 #chamada p{
@@ -378,10 +377,19 @@ body.interna #texto_logo{
   display:inline-block;
 }
 #chamada p{
-  display:block;
+  float:left;
+  clear:left;
+  background-color:#007883;
 }
 #chamada p.fale_conosco{
   background-color:#39A0D2;
+}
+#chamada p.ja_eh_usuario{
+  margin-top:28px;
+  background-color:#EEEEEE;
+}
+#chamada p.ja_eh_usuario a{
+  color: #0067B4;
 }
 #pre_sidebar{
   padding-top:633px;

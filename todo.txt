@@ -1,5 +1,5 @@
 OK - Home: inserir botão "Fale Conosco" direcionando para a interna
-- Home: inserir botão "Já é usuário" direcionando para o site www.saraivaacompanha.com.br
+OK - Home: inserir botão "Já é usuário" direcionando para o site www.saraivaacompanha.com.br
 
 
 - arrumar a imagem do imagemapbg da home para o IE
