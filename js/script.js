@@ -192,7 +192,6 @@ function loaded(){
 }
 function init(){
   $(window).load(loaded);  
-  window.addEventListener('load', loaded, true);
   window.addEventListener('resize', windowHeightUpdated, true);
   // window.addEventListener('SVGLoad', SVGLoaded, false);
   addBrowserClasses();
