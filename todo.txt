@@ -6,7 +6,7 @@ OK - Tentar fazer a home na resolucão 1024 pixel de largura sem scroll horizont
 OK - Verificar o Iphone na vertical
 OK (precisa limpar o cache) - No Ipad: Animação do menu nas internas do site esta estranho, as vezes anima, as vezes não.
 OK - IE8, home: usar o mesmo menu
-- IE8, home: O traço da descrição do botão verde passa por cima do botão roxo
-- IE8, home: Area de click do botão roxo esta estranha
-- IE8: deixar o menu das internas igual a versao >9
+OK - IE8, home: Area de click do botão roxo esta estranha
+OK - IE8, home: O traço da descrição do botão verde passa por cima do botão roxo
+OK - IE8: deixar o menu das internas igual a versao >9
 - Colocar o video do tutorial
