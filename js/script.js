@@ -139,11 +139,10 @@ function init(){
   changeViewport();
   alturasMinimas();
   PNGLoaded();
-  $(".inline").colorbox({inline:true, width:"490px", height:'300px', opacity:'0.5', scrolling:false});
-  $(document).bind('cbox_complete', function(){
+  $(".ajax").colorbox({ width:"490px", height:'300px', opacity:'0.5', scrolling:false, onComplete:function(){
     try{
       $('#html-video')[0].play();
     }catch(e){}
-  });
+  }});
 }
 $(init);
