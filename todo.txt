@@ -1,6 +1,6 @@
 
 OK - Educa: deixar a palavra "sites"em itálico (segunda linha)
-- Avaliação e banco de questões: deixar as palavras "online" em itálico (linha seis)
+OK - Avaliação e banco de questões: deixar as palavras "online" em itálico (linha seis)
 - Atividades Multimidia: corrigir para "Ensino Médio"
 - Tentar fazer a home na resolucão 1024 pixel de largura sem scroll horizontal
 - Verificar o Iphone na vertical
