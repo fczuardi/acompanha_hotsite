@@ -204,8 +204,8 @@ body.interna #imagemap_bg{
 }
 #linhas_over img{display:block;position:absolute;}
 #linha_avaliacao              {top:87px;left:570px;}
+#linha_avaliacao.off          {top:-1000px;}
 #linha_midiateca              {top:140px;left:655px;}
-#linha_midiateca.off          {top:-140px;}
 #linha_atividades_multimidia  {top:410px;left:667px;}
 #linha_saraiva_educa          {top:311px;left:718px;}
 #mySVG text{
