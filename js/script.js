@@ -41,11 +41,13 @@ function PNGLoaded(){
       //event listeners hover
       $(this).mouseover(function(){
         var name = this.id.substr(6); 
+        $('#'+name+'_info, #linha_'+name).removeClass('off');
         $('#'+name+'_info, #linha_'+name).stop();
         $('#'+name+'_info, #linha_'+name).fadeTo('fast',1);
       });
       $(this).mouseout(function(){
         var name = this.id.substr(6);
+        $('#'+name+'_info, #linha_'+name).addClass('off');
         $('#'+name+'_info, #linha_'+name).stop();
         $('#'+name+'_info, #linha_'+name).css('opacity',0);
       });
