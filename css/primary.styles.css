@@ -283,7 +283,7 @@ line{
 /*  background-color:rgba(255,0,0,0.5);*/
   line-height: 1.4em;
   display:none;
-  width:200px;
+  width:190px;
 }
 .info_box p{
   margin-top:15px;
@@ -291,7 +291,7 @@ line{
 }
 #saraiva_educa_info{
   top: 265px;
-  left: 847px;
+  left: 787px;
 }
 #avaliacao_info{
   top: 56px;
@@ -299,11 +299,11 @@ line{
 }
 #atividades_multimidia_info{
   top: 396px;
-  left: 846px;
+  left: 795px;
 }
 #midiateca_info{
   top: 84px;
-  left: 846px;
+  left: 806px;
 }
 
 #assinatura{
