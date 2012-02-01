@@ -1,10 +1,12 @@
-OK - Home: inserir botão "Fale Conosco" direcionando para a interna
-OK - Home: inserir botão "Já é usuário" direcionando para o site www.saraivaacompanha.com.br
-OK - Módulo 1 “Avaliação e banco de questões”: no lugar de “áreas do conhecimento”, alterar para “áreas do saber”
-OK - quando clicar no pack + logo "A" deve direcionar para o Acompanha
-OK - o menu está deslocando no Safari, iPad e iPhone
-OK - quando clicar em "Clique e Adquira o Acompanha" deve abrir em uma tela com os contatos email (acompanha@editorasaraiva.com.br) e telefones (os mesmos do Fale Conosco)
-OK - tirar o outline do clique no link da sidebar
-OK - arrumar o imagemapbg da home para o IE
-OK - animar o menu das internas
+
+OK - Educa: deixar a palavra "sites"em itálico (segunda linha)
+- Avaliação e banco de questões: deixar as palavras "online" em itálico (linha seis)
+- Atividades Multimidia: corrigir para "Ensino Médio"
+- Tentar fazer a home na resolucão 1024 pixel de largura sem scroll horizontal
+- Verificar o Iphone na vertical
+- No Ipad: Animação do menu nas internas do site esta estranho, as vezes anima, as vezes não.
+- IE8, home: usar o mesmo menu
+- IE8, home: O traço da descrição do botão verde passa por cima do botão roxo
+- IE8, home: Area de click do botão roxo esta estranha
+- IE8: deixar o menu das internas igual a versao >9
 
