@@ -12,22 +12,27 @@ function hideAllInfo(){
   $(elements).css('opacity', 0);
 }
 
-function PNGLoaded(){
+
+function startMenuAnimation(){
   var anim_easing = 'swing';
   //avaliacao, attividades, saraivaeduca, midiateca
-  var initialRotationTable = [ 185, 79, -77, -33];
   var delayTable = [0, 700*0.5, 2*700*0.5, 3*700*0.5]; 
   var durationTable = [800, 800, 700, 600];
-  // var offsetTopTable = [1, 1, -5, -5];
-  // var offsetLeftTable = [-2, -2, 0, 0];
-	$('#menu_principal').addClass('loaded');
+
+  for (var i=0; i<names.length; i++){
+    name = names[i];
+    $('#item_'+name).delay(delayTable[i]).animate({'transform':'rotate(0deg)', 'top':0, 'left':0}, durationTable[i], anim_easing)
+  }  
+}
+
+function PNGLoaded(){
+  //avaliacao, attividades, saraivaeduca, midiateca
+  var initialRotationTable = [ 185, 79, -77, -33];
+
   for (var i=0; i<names.length; i++){
     name = names[i];
     $('#item_'+name).css('transform', 'rotate('+initialRotationTable[i]+'deg)');
-    // $('#item_'+name).css('top', offsetTopTable[i]);
-    // $('#item_'+name).css('left', offsetLeftTable[i]);
-    $('#item_'+name).delay(delayTable[i]).animate({'transform':'rotate(0deg)', 'top':0, 'left':0}, durationTable[i], anim_easing)
-  }
+  }  
 
   //home
   if($('body').hasClass('home')){
@@ -46,7 +51,6 @@ function PNGLoaded(){
       });
     })
   }
-
   $('area').focus(function(ev){ev.target.blur();})
 
 }
@@ -57,7 +61,7 @@ function changeViewport(){
     if (viewportmeta) {
       if (is_iPhone){
         if($('body').hasClass('home')){
-          viewportmeta.content = "width=device-width; initial-scale=0.26, maximum-scale=0.26";
+          viewportmeta.content = "width=device-width; initial-scale=0.32, maximum-scale=0.32";
         }else{
           if (Math.abs(window.orientation) == 90){
             viewportmeta.content = "width=device-width; initial-scale=0.4, maximum-scale=0.4";
@@ -67,7 +71,7 @@ function changeViewport(){
         }
       } else if (is_iPad){
         if ($('body').hasClass('home')){
-          viewportmeta.content = "width=device-width; initial-scale=0.65, maximum-scale=0.65";
+          viewportmeta.content = "width=device-width; initial-scale=0.7, maximum-scale=0.7";
         }else{
           if (Math.abs(window.orientation) == 90){
             viewportmeta.content = "width=device-width,initial-scale=0.8,maximum-scale=0.8";
@@ -124,7 +128,7 @@ function alturasMinimas(){
 function loaded(){
   windowHeightUpdated();
   IETweaks();
-  PNGLoaded();
+  setTimeout(startMenuAnimation, 200);
 }
 function init(){
   $(window).load(loaded);  
@@ -132,5 +136,6 @@ function init(){
   addBrowserClasses();
   changeViewport();
   alturasMinimas();
+  PNGLoaded();
 }
 $(init);

@@ -152,14 +152,6 @@ body.home #main{
   position:absolute;
   width:500px;
   height:500px;
-/*  -webkit-transform-origin: 102px 214px;
-  -moz-transform-origin: 102px 214px;
-  transform-origin: 102px 214px;
-*/
-  display:none;
-}
-#menu_principal.loaded div{
-  display:block;
 }
 #menu_principal #logo_mascara{
   display:block;
