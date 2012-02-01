@@ -22,6 +22,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colorbox.css">
   
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -75,7 +76,7 @@
       <p><a href="./acompanha/">Sua escola ainda mais atual.</a></p>
     </div>
     <div id="chamada">
-      <p><a href="#">Assista ao Tutorial</a></p>
+      <p><a class='inline' href="#inline_content">Assista ao Tutorial</a></p>
       <p class="fale_conosco" ><a href="../contato">Fale Conosco</a></p>
       <p class="ja_eh_usuario" ><a href="http://www.saraivaacompanha.com.br">Já é usuário</a></p>
     </div>
@@ -99,6 +100,23 @@
         Catálogo de <i>links</i> com textos, planos de aula, simulações e animações disponíveis na internet. Saiba mais.
       </p>
     </div>
+    <div style='display:none'>
+			<div id='inline_content' style=''>
+        <!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
+        <!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
+        <video id="html-video" width="480" height="270" controls>
+        	<!-- MP4 must be first for iPad! -->
+        	<source src="./video/acompanha_270.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+        	<source src="./video/acompanha_270.webm" type="video/webm" /><!-- Firefox / Opera / Chrome10 -->
+        	<!-- fallback to Flash: -->
+        	<object width="480" height="270" type="application/x-shockwave-flash" data="./video/videoplayer.swf">
+        		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+        		<param name="movie" value="./video/videoplayer.swf" />
+        		<param name="flashvars" value="autoplay=on&amp;video_url=acompanha_270.mp4" />
+        	</object>
+        </video>
+			</div>
+		</div>
   </div>
   
   <footer>
@@ -118,6 +136,7 @@
 
 
   <!-- scripts concatenated and minified via build script -->
+  <script defer src="js/libs/jquery.colorbox-min.js"></script>
   <script defer src="js/libs/jquery.transform.light.js"></script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
