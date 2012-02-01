@@ -5,9 +5,17 @@
 	<source src="./video/acompanha_270.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
 	<source src="./video/acompanha_270.webm" type="video/webm" /><!-- Firefox / Opera / Chrome10 -->
 	<!-- fallback to Flash: -->
-  <object wmode="transparent" id="flash-video" width="480" height="270" type="application/x-shockwave-flash" _data="./video/videoplayer.swf">
-  	<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
-  	<param name="movie" value="./video/videoplayer.swf" />
-  	<param name="flashvars" value="autoplay=on&amp;video_url=acompanha_270.mp4" />
+  <embed src="./video/videoplayer.swf"
+         width="480"
+         height="270"
+         name="videoplayer"
+         quality="high"
+         wmode="transparent"
+         allowfullscreen="true"
+         allowScriptAccess="always"
+         type="application/x-shockwave-flash"
+         pluginspage="http://www.macromedia.com/go/getflashplayer"
+         flashvars="video_url=acompanha_270.mp4&amp;autoplay=on"
+  />
   </object>
 </video>
