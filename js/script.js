@@ -103,7 +103,6 @@ function windowHeightUpdated(){
   // alert($(window).height());
   $('body').height(wh);
   $('.bottom').each(function(){
-    console.log($(this).height());
     $(this).css('top', Math.max((wh-$(this).height()), $(this).data('minTop')));
   });
 }
@@ -139,10 +138,12 @@ function init(){
   changeViewport();
   alturasMinimas();
   PNGLoaded();
-  $(".ajax").colorbox({ width:"490px", height:'300px', opacity:'0.5', scrolling:false, onComplete:function(){
-    try{
-      $('#html-video')[0].play();
-    }catch(e){}
-  }});
+  if($('body').hasClass('home')){
+    $(".ajax").colorbox({ width:"490px", height:'300px', opacity:'0.5', scrolling:false, onComplete:function(){
+      try{
+        $('#html-video')[0].play();
+      }catch(e){}
+    }});
+  }
 }
 $(init);
