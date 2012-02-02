@@ -115,7 +115,14 @@ function addBrowserClasses(){
 }
 function IETweaks(){
   if ($('html').hasClass('lt-ie7')){
+    applyPNGFix();
+  }
+}
+function applyPNGFix(){
+  if (typeof DD_belatedPNG != 'undefined'){
     DD_belatedPNG.fix('#assinatura, #linha_avaliacao, #linha_midiateca, #linha_atividades_multimidia, #linha_saraiva_educa');
+  }else {
+    setTimeout(applyPNGFix, 1000);
   }
 }
 function alturasMinimas(){
