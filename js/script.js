@@ -138,12 +138,10 @@ function init(){
   changeViewport();
   alturasMinimas();
   PNGLoaded();
-  if($('body').hasClass('home')){
-    $(".ajax").colorbox({ width:"490px", height:'300px', opacity:'0.5', scrolling:false, onComplete:function(){
-      try{
-        $('#html-video')[0].play();
-      }catch(e){}
-    }});
-  }
+  $(".ajax").colorbox({ width:"490px", height:'300px', opacity:'0.5', scrolling:false, onComplete:function(){
+    try{
+      $('#html-video')[0].play();
+    }catch(e){}
+  }});
 }
 $(init);
