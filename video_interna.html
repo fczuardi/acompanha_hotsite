@@ -1,13 +1,9 @@
-<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
-<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
-<video id="html-video" width="480" height="270" controls autoplay>
-	<!-- MP4 must be first for iPad! -->
-	<source src="../video/acompanha_270.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
-	<source src="../video/acompanha_270.webm" type="video/webm" /><!-- Firefox / Opera / Chrome10 -->
-	<!-- fallback to Flash: -->
+<video id="html-video" width="640" height="360" controls autoplay>
+	<source src="../video/acompanha_360.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+	<source src="../video/acompanha_360.webm" type="video/webm" /><!-- Firefox / Opera / Chrome10 -->
   <embed src="../video/videoplayer.swf"
-         width="480"
-         height="270"
+         width="640"
+         height="360"
          name="videoplayer"
          quality="high"
          wmode="transparent"
@@ -15,7 +11,8 @@
          allowScriptAccess="always"
          type="application/x-shockwave-flash"
          pluginspage="http://www.macromedia.com/go/getflashplayer"
-         flashvars="video_url=acompanha_270.mp4&amp;autoplay=on"
+         flashvars="video_url=acompanha_360.mp4&amp;autoplay=on"
   />
   </object>
 </video>
+<p><a href="../video_interna_720.html" class="videohd">Assistir em HD</a></p>

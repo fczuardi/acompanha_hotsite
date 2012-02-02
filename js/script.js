@@ -145,9 +145,14 @@ function init(){
   changeViewport();
   alturasMinimas();
   PNGLoaded();
-  $(".ajax").colorbox({ width:"490px", height:'300px', opacity:'0.5', scrolling:false, onComplete:function(){
+  $(".ajax").colorbox({ width:"650px", height:'410px', opacity:'0.5', scrolling:false, onComplete:function(){
     try{
       $('#html-video')[0].play();
+      $(".videohd").colorbox({ width:"1290px", height:'750px', opacity:'0.5', scrolling:false, onComplete:function(){
+        try{
+          $('#html-video')[0].play();
+        }catch(e){}
+      }});
     }catch(e){}
   }});
 }
