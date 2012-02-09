@@ -116,12 +116,17 @@ function addBrowserClasses(){
 function IETweaks(){
   if ($('html').hasClass('lt-ie7')){
     applyPNGFix();
+  }else{
+    // alert('is 8')
   }
 }
 function applyPNGFix(){
+  // alert('oo');  
   if (typeof DD_belatedPNG != 'undefined'){
+    // alert('foo');
     DD_belatedPNG.fix('#assinatura, #linha_avaliacao, #linha_midiateca, #linha_atividades_multimidia, #linha_saraiva_educa');
   }else {
+    // alert('bar');
     setTimeout(applyPNGFix, 1000);
   }
 }
@@ -139,7 +144,11 @@ function loaded(){
   setTimeout(startMenuAnimation, 200);
 }
 function init(){
-  $(window).load(loaded);  
+  if ($('html').hasClass('lt-ie9')){
+    loaded();
+  }else{
+    $(window).load(loaded);  
+  }
   $(window).resize(windowHeightUpdated);
   addBrowserClasses();
   changeViewport();
