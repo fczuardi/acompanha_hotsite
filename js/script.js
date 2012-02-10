@@ -121,12 +121,9 @@ function IETweaks(){
   }
 }
 function applyPNGFix(){
-  // alert('oo');  
   if (typeof DD_belatedPNG != 'undefined'){
-    // alert('foo');
     DD_belatedPNG.fix('#assinatura, #linha_avaliacao, #linha_midiateca, #linha_atividades_multimidia, #linha_saraiva_educa');
   }else {
-    // alert('bar');
     setTimeout(applyPNGFix, 1000);
   }
 }
@@ -146,9 +143,8 @@ function loaded(){
 function init(){
   if ($('html').hasClass('lt-ie9')){
     loaded();
-  }else{
-    $(window).load(loaded);  
   }
+  $(window).load(loaded);  
   $(window).resize(windowHeightUpdated);
   addBrowserClasses();
   changeViewport();

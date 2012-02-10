@@ -1,3 +1,3 @@
 cd build
-ant build
+ant buildkit
 cd ..

@@ -2,12 +2,14 @@
    Author:
    ========================================================================== */
 body{
-  visibility:hidden;
   background-color:#D5E2F3;
   color:#242967;
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 15px;
   height:1000px;
+}
+.gt-ie8 body{
+    visibility:hidden;  
 }
 #bg_gradiente{
   width:770px;
